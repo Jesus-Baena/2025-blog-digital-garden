@@ -5,7 +5,7 @@ tags:
 ---
 # Installing Immich on Synology with Tailscale (and the Errors We Fixed Along the Way)
 
-If you're looking for a way to break free from cloud photo services like Google Photos, the self-hosted solution **Immich** is an incredible alternative. It’s powerful, feature-rich, and puts you in complete control of your data. Running it on a Synology NAS is a popular choice, but how do you access it securely when you're away from home?
+I am anticipating to Synology killing its photos app. I've been using it for five or six years already, but giving the latest Synology decisions, better to be ready. If you're looking for a way to break free from cloud photo services like Google Photos, the self-hosted solution **Immich** is an incredible alternative. It’s powerful, feature-rich, and puts you in complete control of your data. Running it on a Synology NAS is a popular choice, but how do you access it securely when you're away from home?
 
 The answer is **Tailscale**, a zero-config VPN that creates a secure private network between your devices. By combining Immich, Docker, and Tailscale on a Synology NAS, you can build the ultimate private photo library.
 

@@ -35,3 +35,6 @@ On this occasion, I have equipped the bike with a camera, so I will be able to s
     
 
 Stay tuned for updates from the road.
+
+UPDATE: [[Traveling from Riga to Warsaw by Motorbike]]
+

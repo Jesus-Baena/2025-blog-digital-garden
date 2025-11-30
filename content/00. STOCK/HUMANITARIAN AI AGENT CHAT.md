@@ -1,12 +1,13 @@
 ---
-title: Humanitarian Agent
+title: HUMANITARIAN AI AGENT CHAT
 description:
 created at:
 lastUpdated:
 tags:
+  - AI
 status: Production
 link: https://chat.baena.ai
-article:
+article: https://baena.ai/articles/chat-agent
 github:
 post:
 ---
@@ -14,7 +15,9 @@ post:
 1.0 Project Overview
 1.1 The Goal
 
-The goal is to launch an open-access AI chat application that any visitor can use immediately, while offering an optional registration path for users who wish to save and manage their conversation history.
+The goal was to launch an open-access AI chat application that any visitor can use immediately, while offering an optional registration path for users who wish to save and manage their conversation history.
+
+
 1.2 The Solution
 
 We are building a web-based chat application using a Nuxt UI Pro template. The application will feature a public chat interface, AI assistant selection, and an optional authentication flow that delegates to our main site, baena.ai. All backend interactions will be handled via a custom API layer connecting to n8n workflows and a Supabase database.

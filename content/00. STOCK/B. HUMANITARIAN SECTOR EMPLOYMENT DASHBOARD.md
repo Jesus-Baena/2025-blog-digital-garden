@@ -4,12 +4,16 @@ draft:
 tags:
 ---
 
+#### [[Project snapshot - Humanitarian Jobs Dashboard]]
+
+## Analysis
 
 #### [[Evolution of relief jobs by experience levels]] 2025-08-10 #DataAnalysis
 
-#### [[Implementing LLM extraction of new information]] 2025-08-10 #AI
+#### [[LLM extraction of new information in Job Descriptions about localization]] 2025-08-10 #AI
 
 
+## Metrics
 #### [[Seven Days Trend]]
 
 #### [[Total Active Posts]]

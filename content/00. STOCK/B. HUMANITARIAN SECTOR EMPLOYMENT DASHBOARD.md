@@ -12,6 +12,7 @@ tags:
 
 #### [[LLM extraction of new information in Job Descriptions about localization]] 2025-08-10 #AI
 
+#### [[The rolling week problem]]
 
 ## Metrics
 #### [[Seven Days Trend]]

@@ -1,0 +1,11 @@
+[Unit]
+Description=Auto-commit Obsidian changes every 2 hours
+Requires=obsidian-autocommit.service
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=2h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

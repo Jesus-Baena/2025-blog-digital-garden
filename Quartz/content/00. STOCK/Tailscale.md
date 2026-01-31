@@ -1,5 +1,0 @@
----
-title: Tailscale
-draft:
-tags:
----

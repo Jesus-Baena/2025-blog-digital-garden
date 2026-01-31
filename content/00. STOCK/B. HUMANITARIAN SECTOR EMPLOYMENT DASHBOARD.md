@@ -15,7 +15,7 @@ post:
 
 ### **The Goal**
 
-To build a self-hosted, sovereign data platform that tracks and analyzes the humanitarian labor market by monitoring the **ReliefWeb API**. The project aims to identify shifts in sectoral demand (e.g., Wash vs. Protection) and geographic hiring trends to help professionals navigate the sector.
+To build a self-hosted, sovereign data platform that tracks and analyzes the humanitarian labor market by monitoring the **ReliefWeb API**. The project aims to identify shifts in sectorial demand (e.g., Wash vs. Protection) and geographic hiring trends to help professionals navigate the sector.
 
 ### **The Solution**
 

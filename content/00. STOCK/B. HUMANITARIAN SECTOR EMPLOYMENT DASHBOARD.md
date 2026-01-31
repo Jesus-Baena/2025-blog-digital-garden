@@ -12,7 +12,7 @@ tags:
 
 #### [[LLM extraction of new information in Job Descriptions about localization]] 2025-08-10 #AI
 
-#### [[The rolling week problem]]
+#### [[The rolling week problem]] #DataAnalysis 
 
 ## Metrics
 #### [[Seven Days Trend]]
@@ -26,3 +26,4 @@ tags:
 #### [[Breakdown by Career Category]]
 
 #### [[Map of Jobs Density]]
+

@@ -2,6 +2,8 @@
 title: LLM extraction of new information in Job Descriptions about localization
 draft:
 tags:
+  - AI
+  - DataAnalysis
 ---
 
 Job descriptions often contain vital data buried in dense paragraphs of text—information like donor requirements, nationality restrictions, or contract types. For my project on [[content/00. STOCK/Humanitarian Sector Employment Dashboard|Humanitarian Sector Employment Dashboard]] I created an **n8n workflow** designed to automatically read, analyze, and structure this data using Large Language Models (LLMs).
@@ -41,20 +43,39 @@ The AI is instructed to return a strict JSON schema containing the following ins
 - **Languages:** Splits languages into "Mandatory" vs. "Preferred".
     
 
+```
+{
+  "is_nationalized": {
+    "value": true,
+    "reasoning": "The text states 'This position is open to Ukrainian nationals only.'"
+  },
+  "is_project_based": {
+    "value": true,
+    "reasoning": "The contract is described as 'Fixed-term, 12 months (dependent on funding)'."
+  },
+  "mentioned_donors": ["USAID", "ECHO"],
+  "keywords": ["WASH", "Program Manager", "Humanitarian", "Project Management", "Team Leadership", "Reporting", "M&E", "Budget Oversight"],
+  "is_rolling_basis": {
+    "value": true,
+    "reasoning": "The ad mentions 'reviewing applications on a rolling basis' and may 'fill the position before the deadline'."
+  },
+  "languages": {
+    "mandatory": ["English"],
+    "preferred": ["Ukrainian"]
+  },
+  "seniority": {
+    "level": "Managerial",
+    "reasoning": "The title is 'Program Manager', it requires 'over 7 years of experience', and involves managing a team of 5."
+  }
+}
+```
+
 #### **3. Structured Storage (Postgres Upsert)**
 
 Once the AI returns the structured JSON, the **Insert or update rows in a table** node takes over. It maps the AI's output fields (like `seniority_level`, `mentioned_donors`, and `is_project_based`) directly to columns in the `job_llm_extractions` table.
 
 The node uses an "Upsert" operation based on the `job_id`. This means if a record for that job somehow already exists, it updates it; otherwise, it creates a new entry, ensuring database integrity.
 
-### **Why This Matters**
+### **Why?**
 
 By standardizing these data points, this workflow allows a humanitarian organization to move from simple keyword searching to complex filtering—enabling queries like _"Show me all Managerial WASH positions funded by USAID that are open to international staff."_
-
----
-
-### **Would you like me to...**
-
-- Create a SQL script to generate the `job_llm_extractions` table schema so it matches the fields expected by this workflow?
-    
-- Help you adjust the system prompt to extract additional specific fields (like "Remote Policy" or "Salary Range")?

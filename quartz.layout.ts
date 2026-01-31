@@ -10,7 +10,7 @@ export const sharedPageComponents: SharedLayout = {
     links: {
       GitHub: "https://github.com/Jesus-Baena",
       Linkedin: "https://linkedin.com/in/jbaenanet",
-      WebPage: "https://jbaena.net",
+      WebPage: "https://baena.ai",
     },
   }),
 }

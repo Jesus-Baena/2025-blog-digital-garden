@@ -467,6 +467,11 @@ pre {
     display: grid;
     padding: 0.5rem 0;
     overflow-x: auto;
+    color: #e6b800; // Yellow for code blocks without syntax highlighting
+    
+    [saved-theme="dark"] & {
+      color: #fae798;
+    }
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);

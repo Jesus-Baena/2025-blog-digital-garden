@@ -43,7 +43,7 @@ The AI is instructed to return a strict JSON schema containing the following ins
 - **Languages:** Splits languages into "Mandatory" vs. "Preferred".
     
 
-```
+```json
 {
   "is_nationalized": {
     "value": true,

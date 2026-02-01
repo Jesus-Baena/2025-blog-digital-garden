@@ -15,14 +15,14 @@ By default Docker will open ports ignoring the *internal* server firewall rules 
 
 There are several options. One being to stop Docker completely to open ports on its on, writing the docker iptables rules **before you install docker.** 
 
-```
+```bash
 sudo mkdir -p /etc/docker
 sudo nano /etc/docker/daemon.json
 ```
 
 ✅ Add the following content and save the file:
 
-```
+```json
         {
           "iptables": false
         }
@@ -60,7 +60,7 @@ You have to edit the `docker-compose.prod.yml` file **to add the `127.0.0.1` bin
 > [!NOTE] Using Tailscale
 > If you prefer to access your Coolify instance through a mesh VPN such as [[Tailscale]] (my recommendation), you have to add this line: 
 > 
-```
+```yaml
 > For Tailscale Access (Primary remote access)
   - "1xx.8x.2xx.2x:${SOKETI_PORT:-8000}:8080"
 ```
@@ -72,7 +72,7 @@ You have to edit the `docker-compose.prod.yml` file **to add the `127.0.0.1` bin
 
 6. Same applies for the port mappings for the real-time service 
 
-```
+```yaml
 ports:
   # ---- Soketi WebSocket Port (the main one) ----
   # For Localhost Access (Emergency)

@@ -7,7 +7,7 @@ tags:
 ![[Pasted image 20250823201006.png]]
 
 
-```
+```sql
 SELECT
     cc.name AS career_category,
     COUNT(j.job_id) AS number_of_jobs

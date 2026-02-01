@@ -6,7 +6,7 @@ tags:
 ![[Pasted image 20250824164018.png]]
 
 
-```
+```sql
 SELECT
     c.name AS country_name,
     c.latitude,

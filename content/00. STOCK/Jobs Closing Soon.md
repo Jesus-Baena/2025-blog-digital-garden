@@ -5,7 +5,7 @@ tags:
 ---
 ![[Pasted image 20250823192710.png]]
 
-```
+```sql
 SELECT
     COUNT(*) AS jobs_closing_soon
 FROM

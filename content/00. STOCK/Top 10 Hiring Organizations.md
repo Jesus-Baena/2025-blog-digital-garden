@@ -7,7 +7,7 @@ tags:
 
 This horizontal bar chart ranks the top 10 humanitarian organizations by their current number of active job postings. It provides a clear, at-a-glance view of the most active recruiters in the sector. 
 
-```
+```sql
 SELECT
   "source"."organization_name" AS "organization_name",
   "source"."number_of_jobs" AS "number_of_jobs"

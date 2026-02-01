@@ -15,7 +15,7 @@ Here is a breakdown of what went wrong and how we fixed it.
 
 **The Investigation:** The issue wasn't the menu itself, but how it tried to launch the text editor. The system scripts were using a command that looked something like this:
 
-```
+```bash
 xdg-terminal-exec --app-id=org.omarchy.editor -e nvim ...
 ```
 

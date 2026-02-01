@@ -12,7 +12,7 @@ For example, when viewing the dashboard at the beginning of a new week (a Monday
 
 The solution is to implement a "rolling seven-day total" query. This provides a far more accurate and stable picture of the immediate trend, smoothing out the noise from arbitrary calendar cutoffs. This is one of several small but critical nuances required to make the data tell an honest story.
 
-```
+```sql
 SELECT 
     job_date,
     daily_count,

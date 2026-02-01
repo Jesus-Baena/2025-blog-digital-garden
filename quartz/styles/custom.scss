@@ -150,10 +150,7 @@ a.internal {
         text-decoration: none;
         
         // Tag Colors
-        color: #e6b800 !important; // Darker yellow for light mode (better contrast)
-        [saved-theme="dark"] & {
-           color: #fae798 !important; // Warm light yellow for dark mode
-        }
+        color: #fae798 !important; // Warm light yellow (works for both modes)
         
         opacity: 1;
         

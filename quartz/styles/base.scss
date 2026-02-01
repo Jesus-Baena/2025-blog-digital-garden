@@ -467,11 +467,7 @@ pre {
     display: grid;
     padding: 0.5rem 0;
     overflow-x: auto;
-    color: #e6b800; // Yellow for code blocks without syntax highlighting
-    
-    [saved-theme="dark"] & {
-      color: #fae798;
-    }
+    color: #fae798; // Warm light yellow (works for both modes)
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);
@@ -511,15 +507,11 @@ pre {
 
 code {
   font-size: 0.9em;
-  color: #e6b800; // Yellow to match tags (light mode)
+  color: #fae798; // Warm light yellow (works for both modes)
   font-family: var(--codeFont);
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   background: var(--lightgray);
-  
-  [saved-theme="dark"] & {
-    color: #fae798; // Yellow to match tags (dark mode)
-  }
 }
 
 tbody,

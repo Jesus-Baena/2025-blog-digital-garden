@@ -179,3 +179,16 @@ a.internal {
     }
   }
 }
+
+// Left-aligned variant for mission cards
+.card-grid.left-align {
+  ul li {
+    text-align: left;
+    
+    .meta-date {
+      display: block;
+      margin-right: 0;
+      margin-top: 0.5rem;
+    }
+  }
+}

@@ -467,7 +467,7 @@ pre {
     display: grid;
     padding: 0.5rem 0;
     overflow-x: auto;
-    color: #fae798; // Warm light yellow (works for both modes)
+    color: #b8860b; // Dark goldenrod yellow for better contrast
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);
@@ -507,7 +507,7 @@ pre {
 
 code {
   font-size: 0.9em;
-  color: #fae798; // Warm light yellow (works for both modes)
+  color: #b8860b; // Dark goldenrod yellow for better contrast
   font-family: var(--codeFont);
   border-radius: 5px;
   padding: 0.1rem 0.2rem;

@@ -1,3 +1,152 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Dark mode custom colors
+[saved-theme="dark"] {
+  // Bold text - warm yellow
+  strong,
+  p > strong {
+    color: #fae798 !important;
+  }
+  
+  // Italic text - green
+  em {
+    color: #A2D8A2;
+  }
+  
+  // Links - traditional blue
+  a {
+    color: #5ac3c7 !important;
+    
+    &:hover {
+      color: #6666ff !important;
+    }
+    
+    &.internal {
+      color: #ffffff !important;
+      
+      &:hover {
+        color: #cccccc !important;
+      }
+    }
+  }
+}
+
+// Custom Link Cards used for indexes
+// Usage:
+// <div class="card-grid">
+//
+// - [[Link]]
+// - [[Link 2]]
+//
+// </div>
+.card-grid {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    li {
+      margin-bottom: 0 !important;
+      list-style: none;
+      
+      // Card container
+      display: block; 
+      position: relative;
+      padding: 1.5rem;
+      border: 1px solid var(--lightgray);
+      border-radius: 8px;
+      background: transparent; // Default
+      
+      [saved-theme="dark"] & {
+         background: rgba(255, 255, 255, 0.03); // Subtle lighter bg for dark mode
+         border-color: var(--gray);
+      }
+      
+      [saved-theme="light"] & {
+         background: var(--light);
+      }
+      
+      transition: all 0.2s ease;
+      
+      // Align content to right by default (for tags/date)
+      text-align: right; 
+
+      // If markdown wraps content in paragraph, reset it
+      p {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      
+      &:hover {
+        border-color: var(--tertiary);
+        background-color: var(--highlight);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+      }
+      
+      // Style the Title (First Link)
+      & > a:first-child,
+      & > p > a:first-child {
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        color: var(--dark) !important; // Keep title text colored (White in dark mode)
+        background: transparent !important; // Force transparent background to remove default link highlighting
+        
+        // Separator line styling
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--gray);
+        border-radius: 0; // Ensure the border/line matches 
+        
+        // Block display
+        display: block; 
+        text-align: left;
+        width: 100%;
+        
+        &:hover {
+           text-decoration: none; 
+           color: var(--tertiary) !important;
+           background: transparent !important;
+        }
+      }
+      
+      // Style for Tags (Subsequent links)
+      a:not(:first-child) {
+        display: inline-block;
+        font-size: 0.9rem;
+        padding: 0; // Remove pill padding
+        margin-left: 0.8rem;
+        background-color: transparent; // Remove pill bg
+        text-decoration: none;
+        color: var(--dark); // Make tags stand out more (white-ish) like in image
+        opacity: 0.8;
+        
+        &:hover {
+           background-color: transparent;
+           color: var(--tertiary);
+           text-decoration: underline;
+        }
+      }
+
+      // Date style
+      .meta-date {
+        display: inline-block;
+        color: var(--gray);
+        font-family: var(--code);
+        margin-right: 0.5rem;
+        font-size: 0.9rem;
+      }
+      
+      // Tags styling
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+  }
+}

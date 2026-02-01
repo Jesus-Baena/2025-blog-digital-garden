@@ -11,91 +11,52 @@ article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
 post:
 ---
-## **Project Overview**
+## **1. Project Title:** **Humanitarian Jobs Dashboard 2025 - 2026:** 
+A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.
 
-### **The Goal**
+## **2. Implementing Organization (Placeholder):** 
+This is a personal project. 
 
-To build a self-hosted, sovereign data platform that tracks and analyzes the humanitarian labor market by monitoring the **ReliefWeb API**. The project aims to identify shifts in sectorial demand (e.g., Wash vs. Protection) and geographic hiring trends to help professionals navigate the sector.
+## **3. Project Background & Problem Statement:**
+The year 2025 has been marked by a "Great Contraction" in the humanitarian sector, triggered by massive funding freezes from major donor countries. This crisis has accelerated a trend of "precarity," where stable, long-term positions are being replaced by short-term, "gig-based" consultancy roles. This structural shift threatens institutional memory and aid quality.
 
-### **The Solution**
+Currently, there is a lack of real-time monitoring tools to track these workforce dynamics. Standard analysis often misses the "missing middle"—the high attrition rate of professionals in their mid-30s—and the increasing "emotional and physical weight" of the profession. A data-driven approach is needed to provide a "rolling" view of these market shifts.
 
-A comprehensive "Humanitarian Labor Intelligence" dashboard. It uses **n8n** to poll the ReliefWeb `/jobs` endpoint, **Flowise** to perform semantic analysis on job descriptions (detecting emerging "soft skill" requirements), and a **Nuxt** frontend to visualize these insights—all containerized and self-hosted for privacy and cost-efficiency.
+## **4. Project Goal:**
+To build a sovereign, AI-powered intelligence platform that monitors the ReliefWeb API to analyze the impact of the 2025 funding crisis on humanitarian workforce stability, localization trends, and technical skill requirements.
 
-### **Key Objectives**
+## **5. Project Objectives:**
 
-- **Automated Data Ingestion:** Use the ReliefWeb API to fetch new vacancies daily, including metadata like _Career Category_, _Years of Experience_, and _Theme_.
+- **Automated Market Monitoring:** Deploy n8n workflows to ingest daily job data, specifically tracking the ratio of consultancy vs. full-time roles to monitor sector precarity.
     
-- **Skill Gap Analysis:** Leverage Flowise (AI) to extract specific technical requirements (e.g., "SQL," "KoboToolbox," "PowerBI") from unstructured job descriptions that standard filters miss.
+- **AI-Driven Extraction:** Leverage Flowise (LLM extraction) to read job descriptions and determine "Localization" status (local vs. international) and hidden technical requirements (SQL, KoboToolbox, PowerBI).
     
-- **Privacy-First Self-Hosting:** Deploy the entire stack using Docker, ensuring no third-party client data is shared and maintaining a permanent, private historical archive of job trends.
+- **Trend Stabilization:** Implement SQL-based "rolling seven-day totals" to eliminate analytical noise from calendar cutoffs, ensuring an honest representation of market downturns.
     
-
-## **Audience & Stakeholders**
-
-- **Primary Users:** Humanitarian workers (job seekers), IM practitioners, and HR researchers.
-    
-- **Key Stakeholders:** None (Personal Portfolio Project).
-    
-
-## **The Plan & Key Features**
-
-### **Overall Approach**
-
-The project utilizes a **Modular Self-Hosted Architecture**.
-
-1. **n8n** triggers every 12 hours, querying `https://api.reliefweb.int/v2/jobs`.
-    
-2. Data is cleaned and sent to a local database.
-    
-3. **Flowise** processes the text to categorize the "seniority" and "technical intensity" of the roles.
-    
-4. **Nuxt** serves as the presentation layer, pulling from the database to show real-time charts.
+- **Self-Hosted Visualization:** Utilize a containerized Metabase instance to serve high-density, interactive dashboards directly to stakeholders via a Nuxt frontend.
     
 
-### **Core Components**
+## **6. Target Beneficiaries:**
 
-- **API Integrator (n8n):** Handles the logic for the ReliefWeb API, including pagination and filtering for specific "Themes" (e.g., _Coordination_ or _Food Security_).
+- **Humanitarian Professionals:** To help them navigate a shrinking market by identifying resilient consultancy niches and required technical skills.
     
-- **Trend Engine (Flowise):** A self-hosted RAG (Retrieval-Augmented Generation) pipeline that lets you "chat" with the current job market (e.g., _"What is the most common skill requested for GIS roles in 2026?"_).
+- **Sector Researchers & NGOs:** To provide data on "brain drain" and the effectiveness of localization efforts during funding crises.
     
-- **The Dashboard (Nuxt):** A fast, responsive UI designed in **Figma**, featuring high-density data visualizations like "Hiring Heatmaps" and "Skill Word Clouds."
-    
-- **Deployment (Docker):** A single `docker-compose.yml` file managing the Nuxt app, n8n instance, and Flowise environment.
+- **Policy Makers:** To visualize the secondary, sector-wide workforce impact resulting from high-level funding stops.
     
 
-## **Timeline & Deliverables**
+## **7. Expected Outcomes & Deliverables:**
 
-### **Major Milestones**
-
-- **Phase 1: API & Design:** Map out the ReliefWeb JSON structure and design the Dashboard UI in Figma.
+- **Live Intelligence Dashboard:** A Metabase-powered UI displaying real-time job trends, hiring heatmaps, and contract-type distributions.
     
-- **Phase 2: Data Pipeline:** Build the n8n workflow to fetch and store job data (using the `appname` parameter required by ReliefWeb).
+- **Localization Report:** Data insights generated by AI extraction confirming the stability (or lack thereof) in local hiring compared to international roles.
     
-- **Phase 3: AI Categorization:** Set up Flowise to analyze job descriptions for hidden technical requirements.
+- **Open-Source Pipeline:** Publicly available GitHub repository containing the SQL queries and n8n automation flows used to power the dashboard.
     
-- **Phase 4: Dashboard Build:** Develop the Nuxt frontend and integrate it with the self-hosted backend.
-    
-
-### **Final Deliverables**
-
-- **Self-Hosted URL:** A live link to the personal dashboard instance.
-    
-- **n8n Workflow (JSON):** The automated pipeline for ReliefWeb data extraction.
-    
-- **Technical Documentation:** A "beginner-friendly" guide on how to deploy this exact humanitarian IM stack using Docker.
-    
-- **Figma File:** Access to the UI/UX design components used for the dashboard.
+- **Technical Documentation:** A "beginner-friendly" guide on deploying this stack (n8n, Flowise, Metabase, Nuxt) using Docker.
 
 
-### **A Technical Note for your n8n workflow:**
 
-ReliefWeb’s API is very friendly but requires an `appname` parameter in every request. Since you are a beginner, the URL you'll likely use in your n8n **HTTP Request node** will look like this:
-
-`https://api.reliefweb.int/v2/jobs?appname=my-humanitarian-dashboard&limit=100&preset=latest`
-
----
-
-#### [[Project snapshot - Humanitarian Jobs Dashboard]]
 
 #### [[Database Structure]]
 

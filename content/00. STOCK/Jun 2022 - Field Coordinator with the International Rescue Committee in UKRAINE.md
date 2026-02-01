@@ -1,0 +1,5 @@
+Spearheaded **large-scale humanitarian operations in Eastern Ukraine**, providing strategic direction and operational oversight to a diverse team of over 150 professionals. My role was instrumental in navigating a complex and dynamic context, driving multi-sectoral program implementation, and representing the NGO community at the highest levels of coordination.
+
+- Led a **diverse team of over 150 staff**, managing all operational, administrative, and programmatic functions across multiple field sites.
+- **Directed multi-sector program implementation** in economic recovery, health, and protection, ensuring timely and impactful assistance to conflict-affected populations.
+- **Represented the NGO community as the elected Co-lead** for the Area Head of Humanitarian Agencies forum, shaping coordinated humanitarian strategy.

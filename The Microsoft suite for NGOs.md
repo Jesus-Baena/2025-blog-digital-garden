@@ -1,6 +1,6 @@
 ---
 title: Advanced
-draft:
+draft: true
 tags:
 ---
 Many NGOs use the Microsoft 365. It's a great value for money. 

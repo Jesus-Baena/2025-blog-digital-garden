@@ -1,6 +1,6 @@
 ---
 title: Personal Knowledge Base
-draft:
+draft: false
 tags:
 ---
 

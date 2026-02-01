@@ -1,15 +1,18 @@
 ---
 title: Project snapshot - Humanitarian Jobs Dashboard
 description: A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.
+date: 2025-02-13
 lastUpdated: 2026-01-14
 tags:
   - AI
   - DataAnalysis
 status: Production
+briefing:
 link: https://baena.ai/demos/reliefjobs-dashboard
 article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
 post:
+draft: false
 ---
 ## **1. Project Title:** **Humanitarian Jobs Dashboard 2025 - 2026:** 
 A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.

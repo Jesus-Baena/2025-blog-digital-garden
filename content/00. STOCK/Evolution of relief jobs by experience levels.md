@@ -18,4 +18,4 @@ by percentage
 ![[Screenshot 2025-08-13 090316.png]]
 
 
-For my [[Humanitarian Sector Employment Dashboard]] demo, **I will choose the one by absolute numbers. It is more descriptive for a general audience.** 
+For my [[content/00. STOCK/Humanitarian Sector Employment Dashboard]] demo, **I will choose the one by absolute numbers. It is more descriptive for a general audience.** 

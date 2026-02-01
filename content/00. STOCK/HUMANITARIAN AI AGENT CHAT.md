@@ -1,57 +1,63 @@
 ---
 title: HUMANITARIAN AI AGENT CHAT
-description:
-created at:
-lastUpdated:
+description: An AI powered assistant expert in Humanitarian Affairs
+date: 2024-10-07
+lastUpdated: 2025-12-16
 tags:
   - AI
 status: Production
+briefing: https://baena.ai/projects/ai-chatbot-project
 link: https://chat.baena.ai
 article: https://baena.ai/articles/chat-agent
 github:
 post:
+draft: false
 ---
+## **1. Project Title:**
+The Humanitarian AI Chatbot
 
-1.0 Project Overview
-1.1 The Goal
+## **2. Implementing Organization (Placeholder):**
+baena.ai — Jesus Baena (Solo Developer)
 
-The goal was to launch an open-access AI chat application that any visitor can use immediately, while offering an optional registration path for users who wish to save and manage their conversation history.
+## **3. Project Background & Problem Statement:**
 
+Humanitarian practitioners often require real-time data analysis and decision-making support in challenging field environments. While AI offers a solution, many tools are gated or lack the specific context of humanitarian datasets. There is a need for an accessible, "humanitarian-first" assistant that provides immediate value to guest users while allowing professional staff to maintain a persistent, secure history of their technical queries and operational data.
 
-1.2 The Solution
+## **4. Project Goal:**
 
-We are building a web-based chat application using a Nuxt UI Pro template. The application will feature a public chat interface, AI assistant selection, and an optional authentication flow that delegates to our main site, baena.ai. All backend interactions will be handled via a custom API layer connecting to n8n workflows and a Supabase database.
-1.3 Key Objectives
+To deploy an open-access, web-based AI application optimized for humanitarian field staff, offering immediate guest access and an optional authenticated path for persistent conversation management.
 
-    Develop a public, session-based chat experience for anonymous users with a clear call-to-action to register.
-    Implement a delegated authentication system for users to sign up/log in to save and retrieve their entire chat history.
-    Build a robust backend integration connecting the Nuxt server to an n8n webhook and persisting all data in a Supabase database.
+## **5. Project Objectives:**
 
-2.0 Audience & Stakeholders
+- **Public Accessibility:** Develop a public, session-based chat experience for anonymous users with zero friction to entry.
+    
+- **Persistent Session Management:** Implement a delegated authentication system via `baena.ai` to allow registered users to save and retrieve their full conversation history.
+    
+- **Low-Overhead Architecture:** Build a custom backend integration that connects a Nuxt server to n8n webhooks, ensuring all AI interactions are logged and persisted in a Supabase database.
+    
+- **Educational Context:** Optimize model responses to append humanitarian educational context, specifically supporting remote field staff in their decision-making.
+    
 
-    Primary Users: Anonymous visitors seeking quick AI interaction and registered users who want to maintain a persistent chat history.
-    Key Stakeholders: The baena.ai development and product teams.
+## **6. Target Beneficiaries:**
 
-3.0 The Plan & Key Features
-3.1 Overall Approach
+- **Humanitarian Practitioners:** Field staff requiring real-time data analysis and context-aware assistance.
+    
+- **Humanitarian Organizations:** Entities looking to enhance operational efficiency through standardized AI tools.
+    
+- **Anonymous Visitors:** Users seeking quick, reliable AI interaction based on humanitarian datasets.
+    
 
-Our strategy is to leverage an existing Nuxt UI Pro template as a foundation, removing its default authentication and AI call features. We will then build and integrate the custom functionalities outlined in the requirements, focusing first on the backend API and database persistence, followed by the dynamic frontend components.
-3.2 Core Components
+## **7. Expected Outcomes & Deliverables:**
 
-    Authentication System: A delegated flow redirecting users to baena.ai for login/signup and returning them to the chat app with an active session.
-    Core Chat Interface: A dynamic UI featuring a resizable message input, conversation history display, AI assistant selector, and a user menu that adapts based on authentication status.
-    Backend Integration: A Nuxt server API that routes requests to a designated n8n webhook, passing the message, thread_id, and assistant_id, with all conversations saved to Supabase.
+- **Live Chat Platform:** A fully functional, production-ready web application hosted at `chat.baena.ai`.
+    
+- **Nuxt-n8n Bridge:** A robust custom API layer that routes frontend requests to n8n workflows without traditional server bloat.
+    
+- **Data Persistence Layer:** A Supabase integration managing user profiles, assistant selection, and thread history.
+    
+- **Technical Documentation:** A summary of the architecture and features, moving from the initial Bubble prototype to the current custom stack.
+    
 
-4.0 Timeline & Deliverables
-4.1 Major Milestones
+## **8. Sustainability:**
 
-    Date: Project Kickoff & Requirements Finalized
-    Date: Backend Integration (API, n8n, Supabase) Complete
-    Date: MVP Deployed and Live at chat.baena.ai
-
-4.2 Final Deliverables
-
-    A live and fully functional web application accessible at chat.baena.ai.
-    The final source code repository for the application.
-    A presentation or document summarizing the features and architecture.
-
+The project ensures long-term viability by migrating from a no-code prototype (Bubble) to a sovereign, custom architecture using Nuxt UI Pro, n8n, and Supabase. This "low-overhead" stack minimizes maintenance costs while maximizing control over data and AI behavior. By decoupling the frontend from the core automation workflows, the system can easily scale or adapt to new AI models as the humanitarian sector’s needs evolve.

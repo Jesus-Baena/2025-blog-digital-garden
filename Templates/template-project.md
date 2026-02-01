@@ -1,10 +1,11 @@
 ---
 title:
 description:
-created at:
+date:
 lastUpdated:
 tags:
 status:
+briefing:
 link:
 article:
 github:

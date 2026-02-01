@@ -11,7 +11,7 @@ briefing:
 link: https://baena.ai/demos/reliefjobs-dashboard
 article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
-post:
+post: "[Linkedin](https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABWDzXkB5OUe7-mhlazcv5nsspWDYSgcmP4)"
 draft: false
 ---
 ## **1. Project Title:** **Humanitarian Jobs Dashboard 2025 - 2026:** 

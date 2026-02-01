@@ -506,11 +506,15 @@ pre {
 
 code {
   font-size: 0.9em;
-  color: var(--dark);
+  color: #e6b800; // Yellow to match tags (light mode)
   font-family: var(--codeFont);
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   background: var(--lightgray);
+  
+  [saved-theme="dark"] & {
+    color: #fae798; // Yellow to match tags (dark mode)
+  }
 }
 
 tbody,

@@ -2,12 +2,19 @@
 
 // put your custom CSS here!
 
+// Remove background from internal links globally
+a.internal {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
 // Dark mode custom colors
 [saved-theme="dark"] {
-  // Bold text - warm yellow
+  // Bold text - standard white
   strong,
   p > strong {
-    color: #fae798 !important;
+    color: var(--darkgray) !important;
   }
   
   // Italic text - green
@@ -22,14 +29,24 @@
     &:hover {
       color: #6666ff !important;
     }
-    
-    &.internal {
-      color: #ffffff !important;
-      
-      &:hover {
-        color: #cccccc !important;
-      }
-    }
+  }
+}
+
+// Light mode custom colors
+[saved-theme="light"] {
+  a {
+    color: #3b8f93 !important;
+  }
+  
+  // Bold text - standard dark gray
+  strong,
+  p > strong {
+    color: var(--darkgray) !important;
+  }
+  
+  // Italic text - darker green
+  em {
+    color: #4CAF50;
   }
 }
 
@@ -97,7 +114,13 @@
         font-size: 1.2rem;
         text-decoration: none;
         margin-bottom: 1rem;
-        color: var(--dark) !important; // Keep title text colored (White in dark mode)
+        
+        // Use tailored blue colors for title
+        color: #3b8f93 !important; // Light mode default
+        [saved-theme="dark"] & {
+          color: #5ac3c7 !important;
+        }
+
         background: transparent !important; // Force transparent background to remove default link highlighting
         
         // Separator line styling
@@ -125,12 +148,18 @@
         margin-left: 0.8rem;
         background-color: transparent; // Remove pill bg
         text-decoration: none;
-        color: var(--dark); // Make tags stand out more (white-ish) like in image
-        opacity: 0.8;
+        
+        // Tag Colors
+        color: #e6b800 !important; // Darker yellow for light mode (better contrast)
+        [saved-theme="dark"] & {
+           color: #fae798 !important; // Warm light yellow for dark mode
+        }
+        
+        opacity: 1;
         
         &:hover {
            background-color: transparent;
-           color: var(--tertiary);
+           color: var(--tertiary) !important;
            text-decoration: underline;
         }
       }

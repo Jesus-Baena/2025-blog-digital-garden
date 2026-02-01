@@ -102,13 +102,28 @@ const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzCom
           </div>
         )}
 
-        <div class="project-meta-row">
-          <div class="project-meta-label">
-            <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
-            <span>post</span>
+        {post && (
+          <div class="project-meta-row">
+            <div class="project-meta-label">
+              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path></svg>
+              <span>post</span>
+            </div>
+            <div class="project-meta-value">
+              {(() => {
+                const markdownLinkRegex = /^\[([^\]]+)\]\(([^)]+)\)$/
+                const match = post.match(markdownLinkRegex)
+                if (match) {
+                  const [_, text, url] = match
+                  return <a href={url} class="project-link-url" target="_blank" rel="noopener noreferrer">{text} ↗</a>
+                } else if (post.startsWith('http')) {
+                  return <a href={post} class="project-link-url" target="_blank" rel="noopener noreferrer">{post} ↗</a>
+                } else {
+                  return post
+                }
+              })()}
+            </div>
           </div>
-          <div class="project-meta-value project-empty">{post || "Empty"}</div>
-        </div>
+        )}
       </div>
     </div>
   )

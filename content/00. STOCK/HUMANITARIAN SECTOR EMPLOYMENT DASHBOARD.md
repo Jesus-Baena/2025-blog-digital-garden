@@ -67,22 +67,31 @@ To build a sovereign, AI-powered intelligence platform that monitors the ReliefW
 
 ## Analysis
 
-#### [[Evolution of relief jobs by experience levels]] 2025-08-10 #DataAnalysis
+<div class="card-grid">
 
-#### [[LLM extraction of new information in Job Descriptions about localization]] 2025-08-10 #AI
+- [[Evolution of relief jobs by experience levels]] <span class="meta-date">2025-08-10</span> #DataAnalysis
 
-#### [[The rolling week problem]] #DataAnalysis 
+- [[LLM extraction of new information in Job Descriptions about localization]] <span class="meta-date">2025-08-10</span> #AI
+
+- [[The rolling week problem]] #DataAnalysis 
+
+</div>
 
 ## Metrics
-#### [[Seven Days Trend]]
 
-#### [[Total Active Posts]]
+<div class="card-grid">
 
-#### [[Jobs Closing Soon]]
+- [[Seven Days Trend]]
 
-#### [[Top 10 Hiring Organizations]]
+- [[Total Active Posts]]
 
-#### [[Breakdown by Career Category]]
+- [[Jobs Closing Soon]]
 
-#### [[Map of Jobs Density]]
+- [[Top 10 Hiring Organizations]]
+
+- [[Breakdown by Career Category]]
+
+- [[Map of Jobs Density]]
+
+</div>
 

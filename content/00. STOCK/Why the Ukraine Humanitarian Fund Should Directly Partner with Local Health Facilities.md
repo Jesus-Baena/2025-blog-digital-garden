@@ -3,7 +3,7 @@ title: Advanced
 draft: true
 tags:
 ---
-# Why the Ukraine Humanitarian Fund Should Directly Partner with Local Health Facilities
+# The mistake of not considering Local Health facilities as part of localization targets. 
 
 The Ukrainian response is becoming the global benchmark for **localization**. In 2024, the Ukraine Humanitarian Fund (UHF) achieved a historic milestone, with nearly **60% of funding directed to local partners**. However, while national NGOs have become the backbone of the response, the medical infrastructure remains largely trapped in an "intermediary" model.
 

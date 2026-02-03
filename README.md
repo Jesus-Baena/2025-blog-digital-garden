@@ -1,18 +1,28 @@
-# Quartz v4
+# Jesus Baena - Digital Garden & Personal Knowledge Management
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Welcome to the repository for my personal digital garden. This is a collection of my working notes, thoughts, and technical learnings, published as a static site.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+**Live Site:** https://baena.blog
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## 🚀 About This Project
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+This repository serves as my "Second Brain" or Personal Knowledge Management (PKM) system. Unlike a polished blog, a digital garden is a space for evolving ideas.
 
-## Sponsors
+I use this space to document my learning process and work in:
+* **Humanitarian Data Analysis:** Information management and data modeling for the humanitarian sector.
+* **Tech Stack Learning:** My experiments with **Nuxt, n8n, Flowise**, and **Figma**.
+* **Self-Hosting:** Notes on managing server infrastructure and open-source tools.
+* **AI & Automation:** Exploring how AI agents can support humanitarian workflows.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## 🛠️ Built With
+
+This site is generated using **Quartz v4**, a tool for publishing Obsidian vaults to the web.
+
+* **Content:** Written in Markdown (Obsidian)
+* **Generator:** [Quartz v4](https://quartz.jzhao.xyz/)
+* **Hosting:** GitHub Pages
+
+## ⚖️ License & Attribution
+
+* This website content is © Jesus Baena.
+* The source code for the generator is a fork of [Quartz](https://github.com/jackyzha0/quartz) created by [Jacky Zhao](https://github.com/jackyzha0), licensed under the MIT License.

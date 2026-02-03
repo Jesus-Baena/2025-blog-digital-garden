@@ -8,7 +8,7 @@ If you're interested in my professional work, my portfolio at [at baena.ai](http
 ---
 ###### **[[1. POSTs]]** 
 A general collection of my self-contained thoughts, spanning a wide variety of topics and categories. *This is the bloggy part of this site*. 
-###### **[[2. PROJECTS]]**,  **[[3. MISSIONS]]**, **[[4. STACK]], **[[5. WIKIs]]** and **[[6. ABOUT]]**
+###### **[[2. PROJECTS]]**,  **[[3. MISSIONS]]**, **[[4. STACK]]**, **[[5. WIKIs]]** and **[[6. ABOUT]]**
 This spaces serves as a dynamic repository for my work and digital presence. Here, you'll find a collection of my technical notes and tutorials, offering potential solutions to challenges you might be facing. It also provides a look into the inner workings and development processes of my current projects, with the finished pieces accessible [at baena.ai](https://baena.ai)
 
 ---

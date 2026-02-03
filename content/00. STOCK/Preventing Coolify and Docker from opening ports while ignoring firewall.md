@@ -94,8 +94,8 @@ ports:
 
 8.  **Restart the services** using the command that loads both files. This will apply your change.
 
-    ```bash
+```bash
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --force-recreate
+```
 
-    ```
-
+UPDATE: during 2025 [[I moved to create my own Docker Swarm]]. 

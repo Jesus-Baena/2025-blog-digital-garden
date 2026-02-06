@@ -1,6 +1,6 @@
 ---
 title: A Personal Git-Based Backup & Replication System for my new Omarchy setup
-draft:
+draft: false
 tags:
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Ghost Terminals and Broken Symlinks on Omarchy
-draft:
+draft: false
 tags:
   - tech
   - tutorial

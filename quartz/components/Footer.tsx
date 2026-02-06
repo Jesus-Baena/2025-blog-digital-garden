@@ -9,13 +9,34 @@ interface Options {
 
 export default ((opts?: Options) => {
   const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
-    const links = {
-      Email: "mailto:jesus@jbaena.net",
-      ...(opts?.links ?? {})
-    }
+    // 1. We split the email parts so simple bots/scrapers don't see the full address
+    const user = "jesus"
+    const domain = "jbaena.net"
+    
+    // 2. We separate your custom links from the hardcoded email logic
+    const links = opts?.links ?? {}
+
     return (
       <footer class={`${displayClass ?? ""}`}>
         <ul>
+          {/* 3. The Protected Email Link 
+              We use a simple React event to build the link only when clicked.
+              This prevents bots from scraping it from the HTML href attribute. 
+          */}
+          <li>
+            <a 
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = `mailto:${user}@${domain}`;
+              }}
+              title="Send me an email"
+            >
+              Email
+            </a>
+          </li>
+
+          {/* 4. Your other links (Github, Twitter, etc.) */}
           {Object.entries(links).map(([text, link]) => (
             <li>
               <a href={link}>{text}</a>

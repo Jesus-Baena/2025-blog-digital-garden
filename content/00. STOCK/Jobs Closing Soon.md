@@ -1,6 +1,6 @@
 ---
 title: Jobs Closing Soon
-draft:
+draft: false
 tags:
 ---
 ![[Pasted image 20250823192710.png]]

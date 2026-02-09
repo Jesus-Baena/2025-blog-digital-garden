@@ -13,4 +13,4 @@ This spaces serves as a dynamic repository for my work and digital presence. Her
 
 ---
 
-This space is a natural extension of my daily work within [[Obsidian]]. Since I already use it constantly, this site is just a curated window into my private knowledge vault. The unique clunkiness, block-based feel of this space is a direct result of the Obsidian interface it's built upon. 
+This space is a natural extension of my daily work within [[Obsidian]]. Since I already use it constantly, this site is just a curated window into my private knowledge vault. The unique *clunkiness*, block-based feel of this space is a direct result of the Obsidian interface it's built upon. 

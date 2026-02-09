@@ -186,3 +186,4 @@ echo "Verify the cluster status by running:"
 echo "ssh $ssh_user@$primary_manager sudo docker node ls"
 ```
 
+I am using Portainer as my entry point to the Swarm. 

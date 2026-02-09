@@ -3,7 +3,7 @@ title: Metabase
 draft: false
 tags:
 ---
-A great Open-Source alternative to Power BI and Tableau that I self-host. 
+A great Open-Source alternative to Power BI and Tableau. 
 
 You can use the Question view to create your visualizations, it is an interface that makes the process very visual: 
 

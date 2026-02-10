@@ -190,4 +190,4 @@ I am using Portainer as my entry point to the Swarm.
 
 I have structured it in functional stacks for organization and isolation:
 
-![[Pasted image 20260210122812.png]]
+![[Pasted image 20260210123224.png]]

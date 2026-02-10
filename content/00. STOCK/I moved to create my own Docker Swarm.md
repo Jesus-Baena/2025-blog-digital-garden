@@ -188,9 +188,6 @@ echo "ssh $ssh_user@$primary_manager sudo docker node ls"
 
 I am using Portainer as my entry point to the Swarm. 
 
-I have structured it in functional stacks:
+I have structured it in functional stacks for organization and isolation:
 
-Automation. 
-
-Analysis.
-
+![[Pasted image 20260210122812.png]]

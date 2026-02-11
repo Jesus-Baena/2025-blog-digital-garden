@@ -1,10 +1,10 @@
 ---
-title: Project snapshot - Humanitarian Jobs Dashboard
+title: Humanitarian Jobs Dashboard
 draft: false
 tags:
   - AI
   - DataAnalysis
-description: A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for enterprise clients.
+description: A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for Humanitarians.
 created at:
 lastUpdated: 2026-01-14
 status: Production

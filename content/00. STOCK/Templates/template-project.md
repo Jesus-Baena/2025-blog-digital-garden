@@ -1,6 +1,7 @@
 ---
 title:
 description:
+aliases:
 date:
 lastUpdated:
 tags:

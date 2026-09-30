@@ -5,6 +5,7 @@ modified: 2025-10-17
 lang: es-ES
 aliases:
   - "es/00. STOCK/setting up your GitHub repository"
+source_hash: 76b5c3e629af
 ---
 Primero, asegúrate de tener Quartz [[Welcome to my Blog#🪴 Get Started|clonado y configurado localmente]].
 

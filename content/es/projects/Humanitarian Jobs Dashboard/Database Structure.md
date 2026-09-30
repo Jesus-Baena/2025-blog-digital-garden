@@ -5,6 +5,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Database Structure"
+source_hash: d62d5605c4ad
 ---
 ### Tabla principal
 

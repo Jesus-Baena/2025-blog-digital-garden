@@ -10,6 +10,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/00. STOCK/No christian? no, thank you"
+source_hash: baba00dcfc89
 ---
 Esto fue una primicia.
 

@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Job Postings per Month"
+source_hash: 919823be4ad2
 ---
 ![[Pasted image 20260215092515.png]]
 

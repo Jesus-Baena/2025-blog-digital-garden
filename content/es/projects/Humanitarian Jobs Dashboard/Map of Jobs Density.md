@@ -6,6 +6,7 @@ lang: es-ES
 aliases:
   - "es/00. STOCK/Map of Density of Jobs"
   - "es/00. STOCK/Map of Jobs Density"
+source_hash: 8f6a66d57e96
 ---
 ![[Pasted image 20250824164018.png]]
 

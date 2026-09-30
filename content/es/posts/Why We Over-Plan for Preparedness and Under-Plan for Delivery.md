@@ -9,6 +9,7 @@ modified: 2025-11-30
 lang: es-ES
 aliases:
   - "es/00. STOCK/Why We Over-Plan for Preparedness and Under-Plan for Delivery"
+source_hash: 05caa9f8ef58
 ---
 ### El búnker frente a la transferencia bancaria: por qué planificamos en exceso la preparación y de menos la ejecución
 

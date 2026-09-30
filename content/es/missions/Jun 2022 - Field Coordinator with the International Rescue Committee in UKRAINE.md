@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Jun 2022 - Field Coordinator with the International Rescue Committee in UKRAINE"
+source_hash: 2da6ff4a0bdd
 ---
 Lideré **operaciones humanitarias a gran escala en el este de Ucrania**, proporcionando dirección estratégica y supervisión operativa a un equipo diverso de más de 150 profesionales. Mi función fue clave para desenvolverme en un contexto complejo y dinámico, impulsar la implementación de programas multisectoriales y representar a la comunidad de ONG en los más altos niveles de coordinación.
 

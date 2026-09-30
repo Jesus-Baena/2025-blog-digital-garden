@@ -8,6 +8,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/LLM extraction of new information in Job Descriptions about localization"
+source_hash: 0a6faabc83a4
 ---
 Las descripciones de empleo a menudo contienen datos vitales enterrados en densos párrafos de texto: información como los requisitos de los donantes, las restricciones de nacionalidad o los tipos de contrato. Para mi proyecto sobre el [[HUMANITARIAN JOBS DASHBOARD|Panel de Empleo del Sector Humanitario]] creé un **flujo de trabajo en n8n** diseñado para leer, analizar y estructurar automáticamente estos datos mediante grandes modelos de lenguaje (LLM).
 

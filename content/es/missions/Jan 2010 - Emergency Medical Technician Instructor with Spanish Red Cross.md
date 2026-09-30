@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Jan 2010 - Emergency Medical Technician Instructor with Spanish Red Cross"
+source_hash: 3a243254cb8e
 ---
 Desarrollé e impartí **programas de formación integrales para aspirantes a Técnico en Emergencias Sanitarias**. Mi función incluía crear planes de estudio estructurados, impartir formación práctica y realizar evaluaciones rigurosas para garantizar que los graduados fueran plenamente competentes para un despliegue de emergencia en el mundo real.
 

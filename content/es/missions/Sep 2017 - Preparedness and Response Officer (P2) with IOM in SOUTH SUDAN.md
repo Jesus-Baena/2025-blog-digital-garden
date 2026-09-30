@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Sep 2017 - Preparedness and Response Officer (P2) with IOM in SOUTH SUDAN"
+source_hash: 693b69f9f49f
 ---
 Como miembro del Pool de Emergencias de ACF, **ejercí como experto global desplegable con rapidez para iniciar y gestionar respuestas críticas de WaSH.** Realicé misiones exploratorias, puse en marcha operaciones de emergencia en numerosos países y contribuí a la estrategia global desarrollando herramientas técnicas y planes de preparación.
 

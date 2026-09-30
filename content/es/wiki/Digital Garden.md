@@ -5,6 +5,7 @@ modified: 2025-08-17
 lang: es-ES
 aliases:
   - "es/00. STOCK/Digital Garden"
+source_hash: 537c26fc89df
 ---
 > [!CONCEPT] Concepto
 > Un jardín digital es un espacio en línea donde las personas pueden cultivar y conectar sus pensamientos, ideas y conocimientos a lo largo del tiempo. Es como un wiki personal o un cuaderno conectado que crece y evoluciona a medida que el creador aprende.

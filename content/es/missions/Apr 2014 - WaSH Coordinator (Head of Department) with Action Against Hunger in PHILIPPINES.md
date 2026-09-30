@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Apr 2014 - WaSH Coordinator (Head of Department) with Action Against Hunger in PHILIPPINES"
+source_hash: 479e978b63bc
 ---
 Desplegado en Tacloban inmediatamente después del supertifón Yolanda (Haiyan). Fui **responsable de diseñar y gestionar la respuesta de emergencia de primera fase** de WASH para la isla de Leyte, estableciendo servicios vitales para las poblaciones desplazadas en una de las zonas más devastadas.
 

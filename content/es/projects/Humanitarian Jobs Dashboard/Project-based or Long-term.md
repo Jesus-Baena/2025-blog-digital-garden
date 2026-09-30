@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Project-based or Long-term"
+source_hash: 03bd99964cdf
 ---
 ![[Pasted image 20260215093605.png]]
 ```sql

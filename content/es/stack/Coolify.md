@@ -6,6 +6,7 @@ modified: 2026-02-04
 lang: es-ES
 aliases:
   - "es/00. STOCK/Coolify"
+source_hash: c6603ae32fe2
 ---
 Solo usé Coolify durante unos meses, pero fue increíblemente fructífero. Después [[I moved to create my own Docker Swarm]].
 

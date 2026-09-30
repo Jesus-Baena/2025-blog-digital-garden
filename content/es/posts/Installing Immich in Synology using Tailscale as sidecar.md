@@ -10,6 +10,7 @@ modified: 2025-10-05
 lang: es-ES
 aliases:
   - "es/00. STOCK/Installing Immich in Synology using Tailscale as sidecar"
+source_hash: 979943c9bd57
 ---
 # Instalar Immich en Synology con Tailscale (y los errores que arreglamos por el camino)
 

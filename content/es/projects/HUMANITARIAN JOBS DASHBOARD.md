@@ -31,6 +31,7 @@ draft: false
 lang: es-ES
 image: "Pasted image 20250823193323.png"
 briefing: "[[HUMANITARIAN JOBS DASHBOARD briefing]]"
+source_hash: 616fc00e877c
 ---
 ![[_attachments/humanitarian_jobs_dashboard_project_brief.pdf]]
 

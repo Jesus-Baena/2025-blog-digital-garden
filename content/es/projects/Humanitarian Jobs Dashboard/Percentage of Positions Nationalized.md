@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Percentage of Positions Nationalized"
+source_hash: 8b7115c15149
 ---
 ![[Pasted image 20260215093023.png]]
 

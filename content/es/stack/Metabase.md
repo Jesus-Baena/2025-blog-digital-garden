@@ -6,6 +6,7 @@ modified: 2026-02-15
 lang: es-ES
 aliases:
   - "es/00. STOCK/Metabase"
+source_hash: 15ee807c1d42
 ---
 Una excelente alternativa de código abierto a Power BI y Tableau.
 

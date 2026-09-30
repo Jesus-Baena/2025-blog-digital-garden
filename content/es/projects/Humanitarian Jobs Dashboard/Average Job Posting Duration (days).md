@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Average Job Posting Duration (days)"
+source_hash: f4139601dccb
 ---
 ![[Pasted image 20260215091605.png]]
 

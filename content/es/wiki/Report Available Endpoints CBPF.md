@@ -6,6 +6,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/00. STOCK/Report Available Endpoints CBPF"
+source_hash: 50c60a9f34b9
 ---
 # Análisis de los endpoints disponibles de la API de CBPF
 

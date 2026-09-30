@@ -6,6 +6,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/4. STACK"
+source_hash: d9bc02431be1
 ---
   Esta sección ofrece actualizaciones sobre la tecnología que utilizo. Está organizada en dos categorías: **Local-First**, un inventario de mi infraestructura física; y **Open-Source-First**, una lista del software que alojo o utilizo.
 

@@ -23,6 +23,7 @@ stack:
 draft: false
 lang: es-ES
 image: "Gemini_Generated_Image_rinczxrinczxrinc.png"
+source_hash: 5c1d58a310f6
 ---
 ## **1. Título del proyecto:**  
 Proyecto COMPASS: Un kit genérico de gestión de terreno para ONG humanitarias

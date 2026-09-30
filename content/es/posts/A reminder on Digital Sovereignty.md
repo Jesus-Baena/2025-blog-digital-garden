@@ -11,6 +11,7 @@ modified: 2025-08-12
 lang: es-ES
 aliases:
   - "es/00. STOCK/A reminder on Digital Sovereignty"
+source_hash: b6d9c51e39d3
 ---
 > [!REMINDER]
 > Que esto sirva de recordatorio escalofriante. Solo hay una manera de lograr la soberanía digital personal, y es ==el autoalojamiento en local (on premises)==. 

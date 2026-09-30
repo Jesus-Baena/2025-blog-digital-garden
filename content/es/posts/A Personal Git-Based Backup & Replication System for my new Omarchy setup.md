@@ -11,6 +11,7 @@ modified: 2026-02-06
 lang: es-ES
 aliases:
   - "es/00. STOCK/A Personal Git-Based Backup & Replication System for my new Omarchy setup"
+source_hash: 2847e57462c5
 ---
 ## Un sistema personal de copia de seguridad y replicación basado en Git para mi nueva configuración Omarchy
 

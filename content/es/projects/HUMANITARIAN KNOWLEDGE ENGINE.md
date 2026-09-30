@@ -8,6 +8,7 @@ title: "Humanitarian Knowledge Engine"
 note: "Fase conceptual - documentación detallada pendiente"
 aliases:
   - "es/00. STOCK/HUMANITARIAN KNOWLEDGE ENGINE"
+source_hash: 0d755d4cebe4
 ---
 ## **1. Título del proyecto:**  
 

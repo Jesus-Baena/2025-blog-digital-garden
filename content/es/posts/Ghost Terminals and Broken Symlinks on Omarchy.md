@@ -12,6 +12,7 @@ modified: 2026-02-06
 lang: es-ES
 aliases:
   - "es/00. STOCK/Ghost Terminals and Broken Symlinks on Omarchy"
+source_hash: b235aa93048d
 ---
 Me encanta el proyecto Omarchy, pero de vez en cuando las cosas se rompen de formas interesantes. Hace poco, mi configuración (que funciona con los dotfiles de «Omarchy») empezó a comportarse de forma extraña. Me enfrentaba a dos problemas molestos: mis menús de configuración no se abrían y Neovim arrojaba errores crípticos.
 

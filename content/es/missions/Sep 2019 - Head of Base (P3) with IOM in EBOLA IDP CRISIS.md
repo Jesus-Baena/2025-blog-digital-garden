@@ -13,6 +13,7 @@ lang: es-ES
 aliases:
   - "es/00. STOCK/Head of Base (P3) with IOM in EBOLA IDP CRISIS"
   - "es/00. STOCK/Sep 2019 - Head of Base (P3) with IOM in EBOLA IDP CRISIS"
+source_hash: c3a0fddcda31
 ---
 Orquesté una **respuesta de emergencia integral a la crisis del ébola** y al desplazamiento interno masivo como Jefe de Base. Lideré el desarrollo y la ejecución de programas críticos de Refugio y WASH (agua, saneamiento e higiene), aseguré recursos vitales y gestioné riesgos operativos significativos en un entorno volátil para atender a comunidades desplazadas y vulnerables.
 

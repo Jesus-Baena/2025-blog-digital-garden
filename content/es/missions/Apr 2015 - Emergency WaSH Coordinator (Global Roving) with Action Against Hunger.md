@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Apr 2015 - Emergency WaSH Coordinator (Global Roving) with Action Against Hunger"
+source_hash: 193fa26effed
 ---
 Dirigí la recuperación estratégica de WASH posterior al tifón Yolanda como Jefe de Departamento. **Lideré un equipo a nivel de capital y supervisé una amplia cartera** de proyectos que restauraron infraestructuras críticas y mejoraron la salud pública de cientos de miles de personas.
 

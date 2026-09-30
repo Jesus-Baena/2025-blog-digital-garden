@@ -13,6 +13,7 @@ status: En curso
 github: https://github.com/Jesus-Baena/2026-ukraine-poolfund-analysis
 draft: false
 lang: es-ES
+source_hash: d42855cf08fd
 ---
 ## **1. Título del proyecto:**  
 

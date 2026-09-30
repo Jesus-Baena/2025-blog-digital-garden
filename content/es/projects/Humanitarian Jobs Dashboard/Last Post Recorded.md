@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Last Post Recorded"
+source_hash: 989ddc12a553
 ---
 ![[Pasted image 20260215093625.png]]
 ```sql

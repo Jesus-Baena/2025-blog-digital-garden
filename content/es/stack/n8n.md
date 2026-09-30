@@ -8,6 +8,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/00. STOCK/n8n"
+source_hash: 49fe9c3b6af0
 ---
 He usado extensamente en proyectos como:
 

@@ -11,5 +11,6 @@ created: 2026-09-30
 lang: es-ES
 aliases:
   - "es/00. STOCK/May 2012 - International Delegate (WASH) with Spanish Red Cross in HAITI"
+source_hash: b442215456c1
 ---
 Delegado de agua, saneamiento e higiene para la Cruz Roja Española durante la recuperación tras el terremoto en Haití, cubriendo la preparación ante huracanes y la respuesta al cólera.

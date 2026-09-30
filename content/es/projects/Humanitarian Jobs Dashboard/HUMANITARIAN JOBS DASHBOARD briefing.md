@@ -14,6 +14,7 @@ github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
 lang: es-ES
 aliases:
   - "es/00. STOCK/HUMANITARIAN JOBS DASHBOARD briefing"
+source_hash: 6f84f8a0ed14
 ---
 ## **Resumen del proyecto**
 

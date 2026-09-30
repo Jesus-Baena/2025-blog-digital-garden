@@ -5,6 +5,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Evolution of relief jobs by experience levels"
+source_hash: 31d115f11c16
 ---
 Los mismos datos, pero el primer gráfico muestra la evolución del mercado de empleo humanitario en números absolutos y el segundo lo hace en porcentaje. 
 

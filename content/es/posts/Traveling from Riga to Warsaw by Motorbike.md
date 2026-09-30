@@ -10,6 +10,7 @@ modified: 2025-11-30
 lang: es-ES
 aliases:
   - "es/00. STOCK/Traveling from Riga to Warsaw by Motorbike"
+source_hash: 2412ecd1e621
 ---
 Mi intento inicial [[From Riga to Andalusia in two wheels]] se quedó a medias. La razón fue una combinación de mal tiempo y pereza :)
 

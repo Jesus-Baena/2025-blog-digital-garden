@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Opportunities by Experience Level"
+source_hash: e5ba269ecaa6
 ---
 ![[Pasted image 20260215091106.png]]
 

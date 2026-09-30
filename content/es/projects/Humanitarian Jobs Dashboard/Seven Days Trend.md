@@ -5,6 +5,7 @@ modified: 2026-02-15
 lang: es-ES
 aliases:
   - "es/00. STOCK/Seven Days Trend"
+source_hash: bd4501b75519
 ---
 ![[Pasted image 20250823191944.png]]
 

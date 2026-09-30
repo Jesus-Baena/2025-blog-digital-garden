@@ -5,6 +5,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Breakdown by Career Category"
+source_hash: fc595f306966
 ---
 ![[Pasted image 20250823201006.png]]
 

@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Jan 2010 - International Delegate (WASH) with Spanish Red Cross in HAITI"
+source_hash: 1b3b08a8adc9
 ---
 Lideré **amplias operaciones WASH de emergencia y de recuperación temprana** en Puerto Príncipe tras el terremoto de 2010, **atendiendo a 135 000 personas desplazadas internas (PDI)**. Mi función fue central en la respuesta al cólera y en la preparación ante huracanes, e implicó múltiples evaluaciones rápidas y el establecimiento de servicios que salvan vidas.
 

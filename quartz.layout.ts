@@ -7,6 +7,14 @@ const isIndexPage = (page: { fileData: { frontmatter?: Record<string, any> } }) 
 const isKitPage = (page: { fileData: { slug?: string } }) =>
   (page.fileData.slug ?? "").includes("Field-Management-Kit")
 
+const leftSidebar = () => [
+  Component.PageTitle(),
+  Component.SiteTagline(),
+  Component.MobileOnly(Component.Spacer()),
+  sidebarTools,
+  Component.NavBar(),
+]
+
 const sidebarTools = Component.Flex({
   components: [
     { Component: Component.Search(), grow: true },
@@ -46,11 +54,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ProjectMeta(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.SiteTagline(),
-    Component.MobileOnly(Component.Spacer()),
-    sidebarTools,
-    Component.NavBar(),
+    ...leftSidebar(),
     // The file tree is only useful inside the Field Management Kit chapters.
     Component.ConditionalRender({
       component: Component.Explorer({
@@ -78,7 +82,24 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [Component.PageTitle(), Component.MobileOnly(Component.Spacer()), sidebarTools],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+    Component.Graph({
+      localGraph: {
+        scale: 0.9,
+        depth: 2,
+        repelForce: 0.8,
+        centerForce: 0.2,
+        linkDistance: 40,
+        fontSize: 0.5,
+      },
+      globalGraph: {
+        scale: 0.9,
+      },
+    }),
+  ],
+  left: leftSidebar(),
   right: [],
 }

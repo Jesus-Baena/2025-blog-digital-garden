@@ -18,6 +18,7 @@ github: https://github.com/Jesus-Baena/2024-humanitarian-chat-agent
 draft: false
 stack: "[[n8n]]"
 lang: es-ES
+source_hash: 005d4dd15d2f
 ---
 ## **1. Título del proyecto:**
 El Chatbot Humanitario de IA

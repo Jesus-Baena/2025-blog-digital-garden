@@ -10,6 +10,7 @@ modified: 2025-08-17
 lang: es-ES
 aliases:
   - "es/00. STOCK/Home Office Infrastructure"
+source_hash: 332647752bdb
 ---
 Soy un gran defensor del [[Open Source]] y del [[Self Hosting]]. 
 

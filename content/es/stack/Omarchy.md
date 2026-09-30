@@ -6,6 +6,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/00. STOCK/Omarchy"
+source_hash: 28ec971fd1aa
 ---
 Anteriormente experimenté con Arch Linux a través de Manjaro, pero los frecuentes obstáculos y la falta de compatibilidad con ArcGIS acabaron forzándome a volver a otros sistemas. Sin embargo, ahora que la IA está disponible para ayudar a resolver los escollos técnicos —combinada con la elegancia depurada de [Omarchy](https://omarchy.org/)—, **he abrazado de nuevo por completo el ecosistema de Arch**.
 

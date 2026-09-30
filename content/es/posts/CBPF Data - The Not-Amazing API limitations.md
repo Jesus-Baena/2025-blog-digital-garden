@@ -10,6 +10,7 @@ modified: 2026-02-13
 lang: es-ES
 aliases:
   - "es/00. STOCK/CBPF Data - The Not-Amazing API limitations"
+source_hash: 3c657ebb1f3e
 ---
 Últimamente he estado lidiando con los datos de los Fondos Mancomunados por País (CBPF, Country-based Pooled Funds) para ver cómo se compara el Fondo Humanitario para Ucrania (UHF) con otros fondos [Github](https://github.com/Jesus-Baena/2026-ukraine-poolfund-analysis). El [explorador de datos](https://cbpf.data.unocha.org/index.html)) integrado del CBPF es bastante bueno para interactuar con los gráficos y obtener descargas básicas a nivel de país. Sin embargo, extraer datos en bruto para un análisis personalizado es otra historia. Aunque está bien que tengan una API, está completamente sin documentar, y sus estrictas limitaciones acaban siendo más frustrantes que útiles.
 

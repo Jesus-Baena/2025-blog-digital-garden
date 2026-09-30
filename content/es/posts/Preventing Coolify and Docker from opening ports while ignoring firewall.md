@@ -10,6 +10,7 @@ modified: 2026-02-03
 lang: es-ES
 aliases:
   - "es/00. STOCK/Preventing Coolify and Docker from opening ports while ignoring firewall"
+source_hash: a1874423da1f
 ---
 ## El problema.
 Por defecto, Docker abre puertos ignorando las reglas del cortafuegos *interno* del servidor (como *ufw*). La solución habitual es establecer reglas de cortafuegos *externas* a través de tu proveedor de VPS. Pero algunos proveedores no ofrecen este tipo de protección (o te la cobran a precio de oro).

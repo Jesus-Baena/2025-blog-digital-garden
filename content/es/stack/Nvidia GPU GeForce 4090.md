@@ -8,6 +8,7 @@ modified: 2026-02-03
 lang: es-ES
 aliases:
   - "es/00. STOCK/Nvidia GPU GeForce 4090"
+source_hash: facc6a4dac67
 ---
 Hice esta inversión en 2024, y ya entonces utilizaba modelos locales de una forma que justificaba el coste. Pero *durante 2025, la calidad de los modelos locales se ha vuelto asombrosamente competitiva*. Cuando comparo traducciones o extracción de información, las diferencias respecto a las API de pago son indistinguibles.
 

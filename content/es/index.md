@@ -4,6 +4,7 @@ list: home
 created: 2021-07-18
 modified: 2026-09-30
 lang: es-ES
+source_hash: c3ce2a80b07f
 ---
 Bienvenido a mi sitio, un espacio que fusiona mi Blog Personal con mi [[Digital Garden]]. Espera una colección dinámica de opiniones, borradores, notas en bruto y divagaciones.
 

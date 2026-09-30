@@ -5,6 +5,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/The rolling week problem"
+source_hash: 444aed242dfe
 ---
 ### Notas metodológicas: El problema de la "semana móvil"
 

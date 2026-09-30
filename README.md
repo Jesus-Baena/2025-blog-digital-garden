@@ -58,6 +58,34 @@ Check content before pushing:
 npm run lint:content
 ```
 
+### Publishing from the main vault
+
+Notes can live in the main Obsidian vault and be copied here with an allow-list:
+add `publish: true` (and optionally `publish_to: posts|projects|missions|stack|wiki`)
+to a note, then run:
+
+```bash
+npm run publish:vault -- --write
+```
+
+Without `--write` the script only reports. It never deletes site content; notes that
+stop being published are listed as orphans. Embedded images and PDFs are copied to
+`_attachments/`. The vault path defaults to `~/Obsidian/obsidian-vault` (override with `VAULT=`).
+
+### Spanish translations
+
+Every Spanish note carries `source_hash`, a fingerprint of its English source.
+
+```bash
+npm run translations          # current / stale / missing per note
+npm run translate -- --dry-run
+npm run translate             # translate missing and stale notes with Claude (needs ANTHROPIC_API_KEY)
+npm run translate -- content/posts/some-note.md
+```
+
+Translations are drafts: read them before committing. Metric snippets and other notes
+you do not want in Spanish can simply be left untranslated.
+
 ## ⚖️ License & Attribution
 
 * This website content is © Jesus Baena.

@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Apr 2012 - International Delegate (WASH) with Spanish Red Cross in DJIBOUTI"
+source_hash: 28bb30b8b804
 ---
 Desplegado en Yibuti durante la crisis del Cuerno de África para llevar a cabo una **misión exploratoria**. El objetivo era evaluar las necesidades humanitarias e identificar posibles proyectos de WASH para una intervención futura, sentando las bases estratégicas de los programas de ayuda posteriores.
 

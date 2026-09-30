@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Nov 2012 - International Delegate (WASH) with Austrian German Red Cross in HAITI"
+source_hash: 0b498acacf10
 ---
 Como Jefe de Proyecto, fui responsable de las acciones de WASH de recuperación tras el terremoto que **proporcionaron instalaciones esenciales a 1.600 hogares.** Además, lideré las labores de respuesta de emergencia durante la temporada de huracanes, garantizando una ayuda oportuna y eficaz a las poblaciones afectadas por los huracanes Sandy e Isaac.
 

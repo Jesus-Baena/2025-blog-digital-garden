@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Job vs. Consultancy"
+source_hash: 68bd68582379
 ---
 ![[Pasted image 20260215091909.png]]
 

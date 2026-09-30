@@ -10,6 +10,7 @@ modified: 2026-02-03
 lang: es-ES
 aliases:
   - "es/00. STOCK/The Mistake of Excluding Local Health Facilities from Localization Targets in Ukraine"
+source_hash: abd7b4cd636e
 ---
 El Fondo Humanitario de Ucrania (UHF) alcanzó recientemente un hito histórico, con casi el 60 % de su financiación dirigida a socios locales. En casi cualquier otra emergencia, esto sería motivo de celebración. Sin embargo, en el contexto de Ucrania, produce sentimientos encontrados: **pone de relieve una oportunidad perdida flagrante en cómo definimos la "localización".**
 

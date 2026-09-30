@@ -10,6 +10,7 @@ modified: 2026-02-15
 lang: es-ES
 aliases:
   - "es/00. STOCK/I moved to create my own Docker Swarm"
+source_hash: 3380ba5af352
 ---
 2025 fue un año decisivo para la *«fontanería interna»* de mi infraestructura. Llegué a un punto en el que ya no podía depender de contenedores aislados y con estado. Para garantizar una continuidad de servicio fiable, invertí mucho tiempo y esfuerzo en construir un sistema orquestado.
 

@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Experience Level Trends"
+source_hash: 9eb1d46aa722
 ---
 ![[Pasted image 20260215092114.png]]
 

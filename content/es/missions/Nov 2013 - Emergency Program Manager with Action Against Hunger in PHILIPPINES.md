@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Nov 2013 - Emergency Program Manager with Action Against Hunger in PHILIPPINES"
+source_hash: 88a600a4f488
 ---
 Gestioné la implementación final y la entrega satisfactoria del componente de saneamiento de un programa de recuperación a gran escala tras el terremoto. Mi trabajo se centró en **garantizar la sostenibilidad a largo plazo** de los servicios de saneamiento, ampliando la cobertura y fomentando la apropiación comunitaria.
 

@@ -12,6 +12,7 @@ modified: 2026-02-01
 lang: es-ES
 aliases:
   - "es/00. STOCK/Feb 2025 - Field Coordinator with Doctors of the World in UKRAINE"
+source_hash: c26e25f39eda
 ---
 Lidero y **dirijo operaciones humanitarias integrales** en una zona de conflicto. Mi liderazgo garantiza la entrega eficaz de servicios móviles de atención médica primaria y salud mental en los óblasts de _Zaporiyia_ y _Járkiv_, centrándome en la excelencia de los programas, la integridad operativa y una sólida gestión de la seguridad para proteger al personal y atender a las poblaciones afectadas por la guerra.
 

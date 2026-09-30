@@ -6,6 +6,7 @@ modified: 2026-02-03
 lang: es-ES
 aliases:
   - "es/6. ABOUT"
+source_hash: 703b81e15a52
 ---
 ![[IMG_20180612_161948_231.jpg]]
 

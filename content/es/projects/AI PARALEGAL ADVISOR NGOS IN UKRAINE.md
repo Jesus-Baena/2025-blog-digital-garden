@@ -15,6 +15,7 @@ github: https://github.com/Jesus-Baena/2025-ukraine-law-chatbot
 draft: false
 lang: es-ES
 note: "Documentación detallada en curso"
+source_hash: 0e9622ffa237
 ---
 ## **1. Título del proyecto:**  
 

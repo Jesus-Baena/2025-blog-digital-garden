@@ -7,6 +7,7 @@ modified: 2026-02-03
 lang: es-ES
 aliases:
   - "es/00. STOCK/The legal context of Communal Non-Profit Enterprises (CNPEs)"
+source_hash: 7d23a29e02bf
 ---
 #### 1. El fundamento de la autonomía y la compra estratégica
 

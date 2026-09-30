@@ -79,10 +79,13 @@ function computeFolderInfo(
   )
 
   // Update with actual content if available
-  for (const [tree, file] of content) {
+  for (const [, file] of content) {
     const slug = stripSlashes(simplifySlug(file.data.slug!)) as SimpleSlug
     if (folders.has(slug)) {
-      folderInfo[slug] = [tree, file]
+      // A real index note exists for this folder. ContentPage already renders it
+      // with the content layout, so skip the generated folder page (which would
+      // otherwise overwrite it with the list layout and a duplicate listing).
+      delete folderInfo[slug]
     }
   }
 

@@ -5,6 +5,7 @@ modified: 2025-08-12
 lang: es-ES
 aliases:
   - "es/00. STOCK/Personal Blog"
+source_hash: a9f1b2e75091
 ---
 > [!CONCEPT] CONCEPTO
 > Un **blog personal** (abreviatura de "weblog") es un diario en línea o sitio web informativo gestionado por una persona, donde comparte de forma regular sus pensamientos, experiencias, opiniones o conocimientos sobre uno o varios temas. Las entradas suelen mostrarse en orden cronológico inverso, apareciendo primero el contenido más reciente.

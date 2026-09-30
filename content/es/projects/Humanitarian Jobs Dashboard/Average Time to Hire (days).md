@@ -6,6 +6,7 @@ modified: 2026-03-02
 lang: es-ES
 aliases:
   - "es/00. STOCK/Average Time to Hire (days)"
+source_hash: 1d1ae7b9bb67
 ---
 ![[Pasted image 20260215091740.png]]
 

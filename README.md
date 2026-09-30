@@ -28,10 +28,26 @@ Everything on the site is driven by frontmatter. There is no HTML to maintain in
 
 | I want to… | Do this |
 | --- | --- |
-| Publish a post | New note in `00. STOCK` from `template-note`, fill `title`, `date`, `tags`, set `draft: false`. It appears on **Posts** automatically. |
-| Add a project | New note from `template-project` (`type: project`, `status`, `description`, links). The header and the **Projects** card are generated. |
-| Add a mission | New note from `template-mission` (`type: mission`, `date`, `period`, `emergency`, `icon`, `role`, `org`). It appears on **Missions**. |
+| Publish a post | New note in `posts/` from `template-note`, fill `title`, `date`, `tags`, set `draft: false`. It appears on **Posts** automatically. |
+| Add a project | New note in `projects/` from `template-project` (`type: project`, `status`, `description`, links). The header and the **Projects** card are generated. |
+| Add a mission | New note in `missions/` from `template-mission` (`type: mission`, `date`, `period`, `emergency`, `icon`, `role`, `org`). It appears on **Missions**. |
 | Add a Spanish version | Same file name under `content/es/`, add `lang: es-ES`. |
+
+```
+content/
+  index.md          home (list: home → latest posts + active projects)
+  about.md
+  posts/            type: post
+  projects/         type: project (+ sub-folders for project notes)
+  missions/         type: mission
+  stack/            tools and infrastructure notes
+  wiki/             everything else in the garden
+  _attachments/     images and PDFs (Obsidian attachment folder)
+  _templates/       Obsidian templates (not published)
+  es/               Spanish mirror with the same layout, notes carry lang: es-ES
+```
+
+Old `00. STOCK/…` and `1. POSTs` URLs redirect through `aliases` in each note's frontmatter.
 
 Index pages carry `list: post | mission | project` and are rendered by `quartz/components/SectionList.tsx`.
 Project headers come from `quartz/components/ProjectMeta.tsx`. Links accept URLs or `[[wikilinks]]`.

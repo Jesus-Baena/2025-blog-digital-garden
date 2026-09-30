@@ -1,0 +1,10 @@
+---
+title: Posts
+list: post
+draft: false
+created: 2025-08-12
+modified: 2026-02-03
+aliases:
+  - "1. POSTs"
+---
+A general collection of my self-contained thoughts, spanning a wide variety of topics. *This is the bloggy part of this site.*

@@ -1,0 +1,28 @@
+---
+title: Breaking Down by Career
+created: 2025-08-23
+modified: 2026-02-01
+aliases:
+  - "00. STOCK/Breakdown by Career Category"
+---
+![[Pasted image 20250823201006.png]]
+
+
+```sql
+SELECT
+    cc.name AS career_category,
+    COUNT(j.job_id) AS number_of_jobs
+FROM
+    Jobs AS j
+JOIN
+    Job_Career_Categories AS jc ON j.job_id = jc.job_id
+JOIN
+    Career_Categories AS cc ON jc.category_id = cc.category_id
+WHERE
+    j.status = 'published'
+    AND j.date_closing > CURRENT_DATE
+GROUP BY
+    cc.name
+ORDER BY
+    number_of_jobs DESC;
+```

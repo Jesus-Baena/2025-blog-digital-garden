@@ -1,10 +1,28 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const isGardenPage = (page: { fileData: { frontmatter?: Record<string, any> } }) =>
+  !page.fileData.frontmatter?.type && !page.fileData.frontmatter?.list
+
+const isIndexPage = (page: { fileData: { frontmatter?: Record<string, any> } }) =>
+  Boolean(page.fileData.frontmatter?.list)
+
+const isKitPage = (page: { fileData: { slug?: string } }) =>
+  (page.fileData.slug ?? "").includes("Field-Management-Kit")
+
+const sidebarTools = Component.Flex({
+  components: [
+    { Component: Component.Search(), grow: true },
+    { Component: Component.Darkmode() },
+    { Component: Component.ReaderMode() },
+    { Component: Component.LangSwitcher() },
+  ],
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.NavBar()],
   afterBody: [Component.SectionList()],
   footer: Component.Footer({
     links: {
@@ -21,35 +39,42 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => page.fileData.slug !== "index" && page.fileData.slug !== "es/index",
     }),
     Component.ArticleTitle(),
-    Component.ContentMeta(),
+    Component.ConditionalRender({
+      component: Component.ContentMeta(),
+      condition: (page) => !isIndexPage(page),
+    }),
     Component.ProjectMeta(),
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
+    sidebarTools,
+    // The file tree is only useful inside the Field Management Kit chapters.
+    Component.ConditionalRender({
+      component: Component.Explorer({
+        title: "Field Management Kit",
+        folderDefaultState: "open",
+        filterFn: (node) => {
+          const slug = node.slug as string
+          return (
+            slug.includes("Field-Management-Kit") ||
+            slug === "projects" ||
+            slug === "es" ||
+            slug === "es/projects"
+          )
         },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-        { Component: Component.LangSwitcher() },
-      ],
-    }),
-    Component.Explorer({
-      filterFn: (node) => {
-        // Hide "00. STOCK" and "content" folders from the explorer
-        return node.displayName !== "00. STOCK" && node.displayName !== "content"
-      },
+      }),
+      condition: isKitPage,
     }),
   ],
   right: [
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => isGardenPage(page) && !isKitPage(page),
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -57,43 +82,7 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [
-    Component.Breadcrumbs(),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.Graph({
-      localGraph: {
-        scale: 0.9,
-        depth: 2,
-        repelForce: 0.8,
-        centerForce: 0.2,
-        linkDistance: 40,
-        fontSize: 0.5,
-      },
-      globalGraph: {
-        scale: 0.9,
-      },
-    }),
-  ],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.LangSwitcher() },
-      ],
-    }),
-    Component.Explorer({
-      filterFn: (node) => {
-        // Hide "00. STOCK" and "content" folders from the explorer
-        return node.displayName !== "00. STOCK" && node.displayName !== "content"
-      },
-    }),
-  ],
+  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  left: [Component.PageTitle(), Component.MobileOnly(Component.Spacer()), sidebarTools],
   right: [],
 }

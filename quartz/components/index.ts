@@ -10,6 +10,7 @@ import PageTitle from "./PageTitle"
 import ContentMeta from "./ContentMeta"
 import ProjectMeta from "./ProjectMeta"
 import SectionList from "./SectionList"
+import NavBar from "./NavBar"
 import Spacer from "./Spacer"
 import TableOfContents from "./TableOfContents"
 import Explorer from "./Explorer"
@@ -39,6 +40,7 @@ export {
   ContentMeta,
   ProjectMeta,
   SectionList,
+  NavBar,
   Spacer,
   TableOfContents,
   Explorer,

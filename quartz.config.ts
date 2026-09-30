@@ -19,7 +19,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "baena.blog",
-    ignorePatterns: ["private", "templates", "**/Templates/**", ".obsidian"],
+    ignorePatterns: ["private", "templates", "_templates/**", ".obsidian"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

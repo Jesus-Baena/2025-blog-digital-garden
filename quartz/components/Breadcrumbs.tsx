@@ -76,6 +76,13 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       return crumb
     })
 
+    // Bilingual site: `es/…` pages treat the language folder as their root
+    // (Inicio → es/) instead of showing "Home ❯ Bienvenido ❯ …".
+    if (fileData.frontmatter?.lang && /^[a-z]{2}$/.test(slugParts[0]) && crumbs.length > 1) {
+      crumbs[1].displayName = rootName
+      crumbs.shift()
+    }
+
     if (!options.showCurrentPage) {
       crumbs.pop()
     }

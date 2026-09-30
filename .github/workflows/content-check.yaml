@@ -1,0 +1,28 @@
+name: Content check
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**", "quartz/**", "quartz.config.ts", "quartz.layout.ts", "scripts/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check content frontmatter
+        run: npm run lint:content
+      - name: Typecheck
+        run: npx tsc --noEmit
+      - name: Build
+        run: npx quartz build

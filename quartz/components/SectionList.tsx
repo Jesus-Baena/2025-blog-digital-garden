@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date as DateEl, getDate } from "./Date"
-import { getEffectiveLocale } from "../i18n"
+import { getEffectiveLocale, i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import {
   langPrefix,
@@ -20,14 +20,23 @@ import {
  * note in the same language whose frontmatter has `type: <that value>` is listed,
  * newest first. No HTML is needed in the vault.
  */
-type ListType = "post" | "mission" | "project"
+type ListType = "post" | "mission" | "project" | "home"
 
 interface Options {
   attachmentFolder: string
+  homePosts: number
 }
 
 const defaultOptions: Options = {
-  attachmentFolder: "00. STOCK",
+  attachmentFolder: "_attachments",
+  homePosts: 5,
+}
+
+const HOME_EN = {
+  latestPosts: "Latest posts",
+  activeProjects: "Active projects",
+  allPosts: "All posts →",
+  allProjects: "All projects →",
 }
 
 const byDateDesc =
@@ -53,11 +62,6 @@ export default ((userOpts?: Partial<Options>) => {
     const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
     const t = projectStrings(locale)
     const prefix = langPrefix(fileData.slug!)
-    const items = allFiles
-      .filter((f) => f.frontmatter?.type === kind && langPrefix(f.slug!) === prefix)
-      .sort(byDateDesc(cfg))
-
-    if (items.length === 0) return null
 
     const tagLinks = (page: QuartzPluginData) =>
       (page.frontmatter?.tags ?? []).map((tag: string) => (
@@ -68,6 +72,97 @@ export default ((userOpts?: Partial<Options>) => {
           {tag}
         </a>
       ))
+    const items = allFiles
+      .filter((f) => f.frontmatter?.type === kind && langPrefix(f.slug!) === prefix)
+      .sort(byDateDesc(cfg))
+
+    if (kind === "home") {
+      const h = { ...HOME_EN, ...((i18n(locale).components as any).home ?? {}) }
+      const posts = allFiles
+        .filter((f) => f.frontmatter?.type === "post" && langPrefix(f.slug!) === prefix)
+        .sort(byDateDesc(cfg))
+        .slice(0, opts.homePosts)
+      const active = allFiles
+        .filter(
+          (f) =>
+            f.frontmatter?.type === "project" &&
+            langPrefix(f.slug!) === prefix &&
+            ["production", "ongoing", "development"].includes(
+              statusClass(String(f.frontmatter?.status ?? "")),
+            ),
+        )
+        .sort(byDateDesc(cfg))
+      return (
+        <div class={classNames(displayClass, "section-list", "home-sections")}>
+          {posts.length > 0 && (
+            <section>
+              <h2>{h.latestPosts}</h2>
+              <div class="card-grid">
+                <ul>
+                  {posts.map((page) => {
+                    const date = getDate(cfg, page)
+                    return (
+                      <li>
+                        <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                          {page.frontmatter?.title}
+                        </a>
+                        {date && (
+                          <span class="meta-date">
+                            <DateEl date={date} locale={locale} />
+                          </span>
+                        )}
+                        {tagLinks(page)}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+              <p class="see-all">
+                <a
+                  href={resolveRelative(fileData.slug!, `${prefix}posts/index` as FullSlug)}
+                  class="internal"
+                >
+                  {h.allPosts}
+                </a>
+              </p>
+            </section>
+          )}
+          {active.length > 0 && (
+            <section>
+              <h2>{h.activeProjects}</h2>
+              <ul class="home-projects">
+                {active.map((page) => {
+                  const fm: Record<string, any> = page.frontmatter ?? {}
+                  return (
+                    <li>
+                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                        {fm.title}
+                      </a>
+                      {fm.status && (
+                        <span class={classNames(undefined, "status-badge", statusClass(fm.status))}>
+                          {fm.status}
+                        </span>
+                      )}
+                      {fm.description && <p>{fm.description}</p>}
+                    </li>
+                  )
+                })}
+              </ul>
+              <p class="see-all">
+                <a
+                  href={resolveRelative(fileData.slug!, `${prefix}projects/index` as FullSlug)}
+                  class="internal"
+                >
+                  {h.allProjects}
+                </a>
+              </p>
+            </section>
+          )}
+        </div>
+      )
+    }
+
+    if (items.length === 0) return null
 
     if (kind === "project") {
       return (
@@ -197,6 +292,46 @@ export default ((userOpts?: Partial<Options>) => {
   }
 
   SectionList.css = `
+.home-sections h2 {
+  margin-top: 2.5rem;
+}
+.home-sections .see-all {
+  text-align: right;
+  margin: 0.5rem 0 0 0;
+}
+.home-sections .card-grid ul {
+  margin: 1rem 0;
+}
+.home-projects {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.home-projects li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--lightgray);
+}
+.home-projects li > a.internal {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.home-projects .status-badge {
+  display: inline-block;
+  margin-left: 0.6rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.home-projects .status-badge.production { background: rgba(34, 197, 94, 0.15); color: #16a34a; }
+.home-projects .status-badge.development { background: rgba(59, 130, 246, 0.15); color: #2563eb; }
+.home-projects .status-badge.ongoing { background: rgba(234, 179, 8, 0.15); color: #ca8a04; }
+.home-projects p {
+  margin: 0.3rem 0 0 0;
+  color: var(--darkgray);
+  font-size: 0.95rem;
+}
 .section-list.card-grid ul li > a.internal:first-child {
   font-weight: 700;
   font-size: 1.2rem;

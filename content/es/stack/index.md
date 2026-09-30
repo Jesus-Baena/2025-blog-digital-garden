@@ -1,0 +1,27 @@
+---
+title: Stack
+draft: false
+created: 2026-02-03
+modified: 2026-02-13
+lang: es-ES
+aliases:
+  - "es/4. STACK"
+---
+  Esta sección ofrece actualizaciones sobre la tecnología que utilizo. Está organizada en dos categorías: **Local-First**, un inventario de mi infraestructura física; y **Open-Source-First**, una lista del software que alojo o utilizo.
+
+Estos son dos principios que aspiro a cumplir. Con ese fin, he estado construyendo infraestructura local para ganar independencia y soberanía sobre mis datos, así como sobre los datos de mis colaboradores y clientes. Por eso, entre otras acciones, [[I moved to create my own Docker Swarm]].
+
+# LOCAL-FIRST
+
+[[Nvidia GPU GeForce 4090]], Protectly, Synology. 
+
+
+# OPEN-SOURCE-FIRST
+
+[[Omarchy]], Ubuntu, [[Debian]]. 
+
+[[Coolify]], [[Portainer]], Nuxt, Caddy, [[n8n]], Flowise, QGIS, [[Ollama]], Qdrant, [[Metabase]], Supabase, pfsense, Gitea, Immich, Jellyfin. 
+
+### No Open Source
+
+[[Obsidian]]

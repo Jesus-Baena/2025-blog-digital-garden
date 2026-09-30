@@ -65,6 +65,19 @@ export interface Translation {
       github: string
       post: string
     }
+    nav?: {
+      posts: string
+      projects: string
+      missions: string
+      stack: string
+      about: string
+    }
+    home?: {
+      latestPosts: string
+      activeProjects: string
+      allPosts: string
+      allProjects: string
+    }
     projectMeta?: {
       status: string
       started: string

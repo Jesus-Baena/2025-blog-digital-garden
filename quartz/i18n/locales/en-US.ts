@@ -63,6 +63,19 @@ export default {
       github: "github",
       post: "post",
     },
+    nav: {
+      posts: "Posts",
+      projects: "Projects",
+      missions: "Missions",
+      stack: "Stack",
+      about: "About",
+    },
+    home: {
+      latestPosts: "Latest posts",
+      activeProjects: "Active projects",
+      allPosts: "All posts →",
+      allProjects: "All projects →",
+    },
     projectMeta: {
       status: "Status",
       started: "Started",

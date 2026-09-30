@@ -6,7 +6,7 @@ import matter from "gray-matter"
 
 const TYPES = new Set(["post", "mission", "project"])
 const DATE_KEYS = ["date", "created", "modified", "lastUpdated", "published"]
-const files = globbySync("content/**/*.md", { ignore: ["**/.obsidian/**", "**/Templates/**"] })
+const files = globbySync("content/**/*.md", { ignore: ["**/.obsidian/**", "**/_templates/**"] })
 const problems = []
 
 const validDate = (v) => {
@@ -37,7 +37,7 @@ for (const file of files) {
   }
   if (data.type !== undefined && !TYPES.has(data.type))
     problems.push(`${file}: unknown type "${data.type}"`)
-  if (data.list !== undefined && !TYPES.has(data.list))
+  if (data.list !== undefined && !TYPES.has(data.list) && data.list !== "home")
     problems.push(`${file}: unknown list "${data.list}"`)
   if (data.draft !== undefined && typeof data.draft !== "boolean")
     problems.push(`${file}: draft must be true or false`)

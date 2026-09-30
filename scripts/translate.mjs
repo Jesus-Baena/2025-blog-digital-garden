@@ -115,6 +115,11 @@ async function translateNote(src, target, hash) {
     if (typeof translatedProse[k] === "string" && !KEEP_KEYS.has(k)) data[k] = translatedProse[k]
   }
 
+  // Aliases are site paths: the Spanish page needs them under es/.
+  if (Array.isArray(data.aliases)) {
+    data.aliases = data.aliases.map((a) => (String(a).startsWith("es/") ? String(a) : `es/${a}`))
+  }
+
   const body = parsed.content.trim() ? await translateText(parsed.content) : ""
   data.lang = "es-ES"
   data.source_hash = hash

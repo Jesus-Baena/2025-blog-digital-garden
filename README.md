@@ -79,9 +79,12 @@ Every Spanish note carries `source_hash`, a fingerprint of its English source.
 ```bash
 npm run translations          # current / stale / missing per note
 npm run translate -- --dry-run
-npm run translate             # translate missing and stale notes with Claude (needs ANTHROPIC_API_KEY)
-npm run translate -- content/posts/some-note.md
+pass-cli run --env-file .env.refs -- npm run translate                                # missing + stale notes
+pass-cli run --env-file .env.refs -- npm run translate -- content/posts/some-note.md  # one note
 ```
+
+The Claude API key is resolved from Proton Pass through `.env.refs`
+(`ANTHROPIC_API_KEY=pass://Infra-Swarm/shared_anthropic_api_key/value`); nothing secret is stored in the repo.
 
 Translations are drafts: read them before committing. Metric snippets and other notes
 you do not want in Spanish can simply be left untranslated.

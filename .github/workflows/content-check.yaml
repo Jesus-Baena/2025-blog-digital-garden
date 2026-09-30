@@ -22,6 +22,9 @@ jobs:
       - run: npm ci
       - name: Check content frontmatter
         run: npm run lint:content
+      - name: Translation status (informational)
+        run: npm run translations
+        continue-on-error: true
       - name: Typecheck
         run: npx tsc --noEmit
       - name: Build

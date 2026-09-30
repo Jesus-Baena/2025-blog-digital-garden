@@ -75,6 +75,23 @@ article {
     border-radius: var(--radius-sm);
   }
 
+  figure.image-figure {
+    margin: 1.5rem 0;
+    max-width: var(--measure);
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+  }
+
   blockquote {
     border-left: 3px solid var(--secondary);
     background: var(--accent-soft);

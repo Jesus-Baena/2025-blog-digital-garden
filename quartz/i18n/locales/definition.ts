@@ -112,6 +112,11 @@ export interface Translation {
     }
     contentMeta: {
       readingTime: (variables: { minutes: number }) => string
+      updated?: string
+    }
+    postNav?: {
+      newer: string
+      older: string
     }
   }
   pages: {

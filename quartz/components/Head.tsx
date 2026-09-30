@@ -11,6 +11,7 @@ export default (() => {
     fileData,
     externalResources,
     ctx,
+    allFiles,
   }: QuartzComponentProps) => {
     const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
     const titleSuffix = cfg.pageTitleSuffix ?? ""
@@ -21,6 +22,27 @@ export default (() => {
       unescapeHTML(fileData.description?.trim() ?? i18n(locale).propertyDefaults.description)
 
     const { css, js, additionalHead } = externalResources
+
+    // Bilingual site: point search engines at the other language's version when it exists.
+    const slug = fileData.slug!
+    const isEs = slug === "es" || slug.startsWith("es/")
+    const counterpart = isEs
+      ? slug === "es/index"
+        ? "index"
+        : slug.slice(3)
+      : slug === "index"
+        ? "es/index"
+        : `es/${slug}`
+    const hasCounterpart = allFiles.some((f) => f.slug === counterpart)
+    const site = `https://${cfg.baseUrl ?? "example.com"}`
+    const hrefFor = (s: string) => `${site}/${s.replace(/(^|\/)index$/, "$1")}`.replace(/\/$/, "")
+    const alternates = hasCounterpart
+      ? [
+          { lang: isEs ? "es" : "en", href: hrefFor(slug) },
+          { lang: isEs ? "en" : "es", href: hrefFor(counterpart) },
+          { lang: "x-default", href: hrefFor(isEs ? counterpart : slug) },
+        ]
+      : []
 
     const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
     const path = url.pathname as FullSlug
@@ -90,6 +112,9 @@ export default (() => {
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}
+        {alternates.map((a) => (
+          <link rel="alternate" hreflang={a.lang} href={a.href} />
+        ))}
         {additionalHead.map((resource) => {
           if (typeof resource === "function") {
             return resource(fileData)

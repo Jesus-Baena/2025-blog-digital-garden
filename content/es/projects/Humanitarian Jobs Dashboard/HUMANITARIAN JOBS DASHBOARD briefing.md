@@ -5,7 +5,7 @@ tags:
   - AI
   - DataAnalysis
 description: Un panel de inteligencia de negocio en tiempo real que procesa millones de puntos de datos al día para ofrecer información práctica al personal humanitario.
-created at:
+created: 2025-02-13
 lastUpdated: 2026-01-14
 status: Producción
 link: https://baena.ai/demos/reliefjobs-dashboard
@@ -14,7 +14,7 @@ github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
 lang: es-ES
 aliases:
   - "es/00. STOCK/HUMANITARIAN JOBS DASHBOARD briefing"
-source_hash: 6f84f8a0ed14
+source_hash: 79cc198a43b4
 ---
 ## **Resumen del proyecto**
 

@@ -32,6 +32,20 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       if (fileData.dates) {
         segments.push(<Date date={getDate(cfg, fileData)!} locale={locale} />)
+        const { created, modified } = fileData.dates
+        const updatedLabel = i18n(locale).components.contentMeta.updated
+        if (
+          updatedLabel &&
+          created &&
+          modified &&
+          modified.getTime() - created.getTime() > 30 * 24 * 60 * 60 * 1000
+        ) {
+          segments.push(
+            <span class="content-meta-updated">
+              {updatedLabel} <Date date={modified} locale={locale} />
+            </span>,
+          )
+        }
       }
 
       // Display reading time if enabled

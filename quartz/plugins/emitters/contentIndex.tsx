@@ -6,7 +6,7 @@ import { FilePath, FullSlug, SimpleSlug, joinSegments, simplifySlug } from "../.
 import { QuartzEmitterPlugin } from "../types"
 import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
-import { i18n } from "../../i18n"
+import { i18n, getEffectiveLocale } from "../../i18n"
 
 export type ContentIndexMap = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
@@ -51,8 +51,14 @@ function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndexMap): string
   return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`
 }
 
-function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?: number): string {
+function generateRSSFeed(
+  cfg: GlobalConfiguration,
+  idx: ContentIndexMap,
+  limit?: number,
+  prefix: string = "",
+): string {
   const base = cfg.baseUrl ?? ""
+  const locale = getEffectiveLocale(cfg.locale, prefix ? prefix.slice(0, 2) : undefined)
 
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<item>
     <title>${escapeHTML(content.title)}</title>
@@ -82,8 +88,8 @@ function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?:
 <rss version="2.0">
     <channel>
       <title>${escapeHTML(cfg.pageTitle)}</title>
-      <link>https://${base}</link>
-      <description>${!!limit ? i18n(cfg.locale).pages.rss.lastFewNotes({ count: limit }) : i18n(cfg.locale).pages.rss.recentNotes} on ${escapeHTML(
+      <link>https://${joinSegments(base, prefix)}</link>
+      <description>${!!limit ? i18n(locale).pages.rss.lastFewNotes({ count: limit }) : i18n(locale).pages.rss.recentNotes} on ${escapeHTML(
         cfg.pageTitle,
       )}</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
@@ -129,12 +135,22 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       }
 
       if (opts?.enableRSS) {
-        yield write({
-          ctx,
-          content: generateRSSFeed(cfg, linkIndex, opts.rssLimit),
-          slug: (opts?.rssSlug ?? "index") as FullSlug,
-          ext: ".xml",
-        })
+        // One feed per language: index.xml for the default language, es/index.xml for
+        // pages under a two-letter language folder.
+        const feeds = new Map<string, ContentIndexMap>()
+        for (const [slug, details] of linkIndex) {
+          const prefix = slug.match(/^([a-z]{2})\//)?.[0] ?? ""
+          if (!feeds.has(prefix)) feeds.set(prefix, new Map())
+          feeds.get(prefix)!.set(slug, details)
+        }
+        for (const [prefix, idx] of feeds) {
+          yield write({
+            ctx,
+            content: generateRSSFeed(cfg, idx, opts.rssLimit, prefix),
+            slug: joinSegments(prefix, opts?.rssSlug ?? "index") as FullSlug,
+            ext: ".xml",
+          })
+        }
       }
 
       const fp = joinSegments("static", "contentIndex") as FullSlug

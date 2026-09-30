@@ -12,6 +12,7 @@ import ProjectMeta from "./ProjectMeta"
 import SectionList from "./SectionList"
 import NavBar from "./NavBar"
 import SiteTagline from "./SiteTagline"
+import PostNav from "./PostNav"
 import Spacer from "./Spacer"
 import TableOfContents from "./TableOfContents"
 import Explorer from "./Explorer"
@@ -43,6 +44,7 @@ export {
   SectionList,
   NavBar,
   SiteTagline,
+  PostNav,
   Spacer,
   TableOfContents,
   Explorer,

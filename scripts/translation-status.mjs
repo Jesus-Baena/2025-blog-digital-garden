@@ -7,6 +7,7 @@
 //
 //   node scripts/translation-status.mjs            # report: current / stale / missing / extra
 //   node scripts/translation-status.mjs --stamp    # write source_hash into Spanish notes that lack it
+//   node scripts/translation-status.mjs --stamp content/es/posts/x.md   # mark a hand-edited translation current
 //   node scripts/translation-status.mjs --json     # machine-readable output (used by translate.mjs)
 //
 // Exit code is always 0: the report is informational. Use `translate.mjs` to fix.
@@ -57,10 +58,13 @@ export function status() {
 const isCli = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href
 const rows = isCli ? status() : []
 
+// `--stamp` stamps unstamped notes; `--stamp <spanish note...>` re-stamps the given
+// notes as current (use after editing both languages by hand).
+const forced = new Set(process.argv.slice(2).filter((a) => !a.startsWith("--")))
 if (isCli && STAMP) {
   let n = 0
   for (const r of rows) {
-    if (r.state !== "unstamped") continue
+    if (!(r.state === "unstamped" || (forced.has(r.target) && r.hash))) continue
     writeFileSync(r.target, setScalar(readFileSync(r.target, "utf8"), "source_hash", r.hash))
     n++
   }

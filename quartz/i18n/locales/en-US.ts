@@ -77,6 +77,10 @@ export default {
       allPosts: "All posts →",
       allProjects: "All projects →",
     },
+    postNav: {
+      newer: "Newer",
+      older: "Older",
+    },
     projectMeta: {
       status: "Status",
       started: "Started",
@@ -110,6 +114,7 @@ export default {
     },
     contentMeta: {
       readingTime: ({ minutes }) => `${minutes} min read`,
+      updated: "Updated",
     },
   },
   pages: {

@@ -5,7 +5,7 @@ tags:
   - AI
   - DataAnalysis
 description: A real-time business intelligence dashboard processing millions of data points daily to provide actionable insights for Humanitarians.
-created at:
+created: 2025-02-13
 lastUpdated: 2026-01-14
 status: Production
 link: https://baena.ai/demos/reliefjobs-dashboard

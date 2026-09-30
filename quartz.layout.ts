@@ -28,14 +28,16 @@ const sidebarTools = Component.Flex({
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.SectionList()],
+  afterBody: [Component.PostNav(), Component.SectionList()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Jesus-Baena",
       Linkedin: "https://linkedin.com/in/jbaenanet",
       WebPage: "https://baena.ai",
-      RSS: "/index.xml",
     },
+    rss: true,
+    copyright: "Jesús Baena",
+    since: 2010,
   }),
 }
 

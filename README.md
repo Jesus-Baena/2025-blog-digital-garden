@@ -182,6 +182,11 @@ environment. Locally the key comes from a password manager through the secret-fr
 stored in the repository. Translations are drafts: read them before committing.
 Notes you do not want in Spanish can simply be left untranslated.
 
+This also runs on its own: when English content lands on `main`, the
+`Translate to Spanish` workflow drafts the missing or stale translations and opens a
+pull request for review (it needs the `ANTHROPIC_API_KEY` repository secret; without
+it the job only logs a warning).
+
 ---
 
 ## Publishing from another vault (optional)

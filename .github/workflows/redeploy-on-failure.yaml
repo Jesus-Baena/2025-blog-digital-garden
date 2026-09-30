@@ -1,0 +1,37 @@
+name: Retrigger failed Cloudflare build
+
+# Workaround: Cloudflare Pages builds of pushes that change content have been
+# failing intermittently in September 2026 while an immediate retrigger always
+# succeeds. When Cloudflare reports a failed build on main, push one empty commit
+# to trigger a new build. Guarded so a failed retrigger does not loop.
+
+on:
+  check_run:
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  retrigger:
+    if: >
+      github.event.check_run.app.slug == 'cloudflare-workers-and-pages' &&
+      github.event.check_run.conclusion == 'failure' &&
+      github.event.check_run.check_suite.head_branch == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+          token: ${{ secrets.PAT_TOKEN || github.token }}
+      - name: Push an empty commit unless the failed commit was already a retrigger
+        run: |
+          if git log -1 --format=%s | grep -q 'retrigger Cloudflare Pages build'; then
+            echo "Last commit is already a retrigger; not looping."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: retrigger Cloudflare Pages build after failure [skip ci]"
+          git push origin main

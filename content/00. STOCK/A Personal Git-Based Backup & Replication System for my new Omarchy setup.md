@@ -1,8 +1,11 @@
 ---
 title: A Personal Git-Based Backup & Replication System for my new Omarchy setup
-draft: false
+type: post
+date: 2025-10-03
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - stack
+  - tutorial
+draft: false
 created: 2025-10-21
 modified: 2026-02-06
 ---

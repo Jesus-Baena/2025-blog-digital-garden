@@ -1,8 +1,12 @@
 ---
 title: Apr 2012 - International Delegate (WASH) with Spanish Red Cross in DJIBOUTI
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2012-04-01
+period: "Apr 2012"
+emergency: "Famine in Horn of Africa"
+icon: "🗺️"
+role: "International Delegate (WASH)"
+org: "Spanish Red Cross"
 created: 2026-02-01
 modified: 2026-02-01
 ---

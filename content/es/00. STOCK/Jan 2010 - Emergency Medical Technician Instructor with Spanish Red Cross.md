@@ -1,8 +1,12 @@
 ---
 title: Ene. 2010 - Instructor de Técnico en Emergencias Sanitarias con Cruz Roja Española
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2010-01-01
+period: "Ene 2010"
+emergency: "Desarrollo de capacidades TEM"
+icon: "🚑"
+role: "Instructor de Técnico en Emergencias Médicas"
+org: "Cruz Roja Española"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

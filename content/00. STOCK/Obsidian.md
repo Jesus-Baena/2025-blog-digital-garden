@@ -1,9 +1,11 @@
 ---
 title: Obsidian
+type: post
+date: 2025-08-02
 draft: false
 tags:
   - stack
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - review
 created: 2025-08-12
 modified: 2026-02-01
 ---

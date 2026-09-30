@@ -1,8 +1,12 @@
 ---
 title: Feb 2025 - Coordinador de Terreno con Médicos del Mundo en UCRANIA
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2025-02-01
+period: "Feb 2025"
+emergency: "Conflicto en Ucrania"
+icon: "⚕️"
+role: "Coordinador de Campo"
+org: "Médicos del Mundo"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

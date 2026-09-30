@@ -22,6 +22,26 @@ This site is generated using **Quartz v4**, a tool for publishing Obsidian vault
 * **Generator:** [Quartz v4](https://quartz.jzhao.xyz/)
 * **Hosting:** GitHub Pages
 
+## ✍️ Publishing workflow
+
+Everything on the site is driven by frontmatter. There is no HTML to maintain in the vault.
+
+| I want to… | Do this |
+| --- | --- |
+| Publish a post | New note in `00. STOCK` from `template-note`, fill `title`, `date`, `tags`, set `draft: false`. It appears on **Posts** automatically. |
+| Add a project | New note from `template-project` (`type: project`, `status`, `description`, links). The header and the **Projects** card are generated. |
+| Add a mission | New note from `template-mission` (`type: mission`, `date`, `period`, `emergency`, `icon`, `role`, `org`). It appears on **Missions**. |
+| Add a Spanish version | Same file name under `content/es/`, add `lang: es-ES`. |
+
+Index pages carry `list: post | mission | project` and are rendered by `quartz/components/SectionList.tsx`.
+Project headers come from `quartz/components/ProjectMeta.tsx`. Links accept URLs or `[[wikilinks]]`.
+
+Check content before pushing:
+
+```bash
+npm run lint:content
+```
+
 ## ⚖️ License & Attribution
 
 * This website content is © Jesus Baena.

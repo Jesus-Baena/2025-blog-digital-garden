@@ -5,12 +5,13 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [Component.SectionList()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Jesus-Baena",
       Linkedin: "https://linkedin.com/in/jbaenanet",
       WebPage: "https://baena.ai",
+      RSS: "/index.xml",
     },
   }),
 }

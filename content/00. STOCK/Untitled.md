@@ -1,9 +1,3 @@
 ---
-project_ID:
-title:
-aliases:
-tags:
-Date:
-status:
-stack:
+
 ---

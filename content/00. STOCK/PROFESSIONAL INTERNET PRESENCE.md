@@ -1,16 +1,9 @@
 ---
-title:
-description:
-date:
-lastUpdated:
-tags:
-status:
-briefing:
-link:
-article:
-github:
-post:
 draft: true
+type: project
+status: Planning
+description: "This project outlines the deliberate strategy and technical implementation of my personal digital identity. It encompasses the creation of this digital garden, my personal blog, and other online assets to serve as a unified hub for my work, projects, and insights."
+title: "Professional Internet Presence"
 ---
 ## **1. Project Title:**  
 

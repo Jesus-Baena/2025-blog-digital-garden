@@ -1,8 +1,10 @@
 ---
 title: ¿No eres cristiano? no, gracias
+type: post
 draft: false
-tags:
 date: 2026-03-25
+tags:
+  - thoughts
 created: 2025-08-11
 modified: 2026-02-13
 lang: es-ES

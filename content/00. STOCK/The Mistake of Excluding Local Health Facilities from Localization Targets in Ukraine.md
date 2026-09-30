@@ -1,8 +1,10 @@
 ---
 title: The Mistake of Excluding Local Health Facilities from Localization Targets in Ukraine
+type: post
 draft: false
-tags:
 date: 2026-01-28
+tags:
+  - thoughts
 created: 2026-02-02
 modified: 2026-02-03
 ---
@@ -44,5 +46,4 @@ In a more personal note, It is somewhat ironic that I am pointing this out mysel
 
 
 ---
-
 [[The legal context of Communal Non-Profit Enterprises (CNPEs)]]

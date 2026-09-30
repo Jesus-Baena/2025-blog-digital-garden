@@ -1,8 +1,12 @@
 ---
 title: Abr 2014 - Coordinador WaSH (Jefe de Departamento) con Action Against Hunger en FILIPINAS
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2014-04-01
+period: "Abr 2014"
+emergency: "Tifón Haiyan"
+icon: "🇵🇭"
+role: "Coordinador WaSH (Jefe de Departamento)"
+org: "Acción contra el Hambre"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

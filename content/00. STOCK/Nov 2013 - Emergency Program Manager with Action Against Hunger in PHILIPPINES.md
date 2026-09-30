@@ -1,8 +1,12 @@
 ---
 title: Nov 2013 - Emergency Program Manager with Action Against Hunger in PHILIPPINES
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2013-11-01
+period: "Nov 2013"
+emergency: "Typhoon Haiyan"
+icon: "🌀"
+role: "Emergency Program Manager"
+org: "Action Against Hunger"
 created: 2026-02-01
 modified: 2026-02-01
 ---

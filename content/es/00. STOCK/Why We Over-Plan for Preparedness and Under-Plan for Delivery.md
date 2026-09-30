@@ -1,8 +1,9 @@
 ---
 title: Por qué planificamos en exceso la preparación y de menos la ejecución
-draft:
+type: post
+date: 2025-10-01
 tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+  - thoughts
 created: 2025-11-30
 modified: 2025-11-30
 lang: es-ES

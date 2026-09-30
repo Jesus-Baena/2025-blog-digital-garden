@@ -1,8 +1,12 @@
 ---
 title: Nov 2012 - International Delegate (WASH) with Austrian German Red Cross in HAITI
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2012-11-01
+period: "Nov 2012"
+emergency: "Post Recovery Earthquake and Huracans Emergencies"
+icon: "🇭🇹"
+role: "International Delegate (WASH)"
+org: "Austrian Red Cross / German Red Cross"
 created: 2026-02-01
 modified: 2026-02-01
 ---

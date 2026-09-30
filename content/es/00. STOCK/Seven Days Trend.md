@@ -1,8 +1,5 @@
 ---
 title: Tendencia de siete días
-draft:
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-23
 modified: 2026-02-15
 lang: es-ES

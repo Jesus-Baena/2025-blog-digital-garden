@@ -11,9 +11,7 @@ status: Production
 link: https://baena.ai/demos/reliefjobs-dashboard
 article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
-post:
 ---
-
 ## **Project Overview**
 
 ### **The Goal**

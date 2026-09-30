@@ -1,5 +1,6 @@
 ---
 title: Cards Against Humanity - UA edition
+type: post
 draft: false
 tags:
   - MentalHealth

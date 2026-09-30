@@ -1,6 +1,5 @@
 ---
 title: Bienvenido a mi Blog
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2021-07-18
 modified: 2026-02-09
 lang: es-ES
@@ -16,5 +15,4 @@ Una colección general de mis pensamientos autocontenidos, que abarca una amplia
 Estos espacios sirven como un repositorio dinámico de mi trabajo y presencia digital. Aquí encontrarás una colección de mis notas técnicas y tutoriales, que ofrecen posibles soluciones a los retos a los que te puedas estar enfrentando. También ofrece una mirada al funcionamiento interno y los procesos de desarrollo de mis proyectos actuales, con las piezas terminadas accesibles [en baena.ai](https://baena.ai)
 
 ---
-
 Este espacio es una extensión natural de mi trabajo diario dentro de [[Obsidian]]. Como ya lo uso constantemente, este sitio no es más que una ventana curada a mi bóveda de conocimiento privada. La singular sensación *tosca* y basada en bloques de este espacio es un resultado directo de la interfaz de Obsidian sobre la que está construido.

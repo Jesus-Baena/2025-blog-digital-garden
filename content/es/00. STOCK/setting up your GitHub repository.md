@@ -1,6 +1,5 @@
 ---
 title: Configurar tu repositorio de GitHub
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2023-12-03
 modified: 2025-10-17
 lang: es-ES

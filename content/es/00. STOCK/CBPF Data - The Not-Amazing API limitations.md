@@ -1,9 +1,10 @@
 ---
 title: Las no-tan-asombrosas limitaciones de la API de datos del CBPF
+type: post
+date: 2026-03-03
 draft: false
 tags:
   - DataAnalysis
-date:
 created: 2025-08-11
 modified: 2026-02-13
 lang: es-ES

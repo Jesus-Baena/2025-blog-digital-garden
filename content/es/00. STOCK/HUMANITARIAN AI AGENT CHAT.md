@@ -1,5 +1,6 @@
 ---
 title: HUMANITARIAN AI AGENT CHAT
+type: project
 description: Un asistente impulsado por IA experto en asuntos humanitarios
 aliases:
   - 2024-humanitarian-chat-agent
@@ -13,63 +14,10 @@ briefing: https://baena.ai/projects/ai-chatbot-project
 link: https://chat.baena.ai
 article: https://baena.ai/articles/chat-agent
 github: https://github.com/Jesus-Baena/2024-humanitarian-chat-agent
-post:
 draft: false
 stack: "[[n8n]]"
 lang: es-ES
 ---
-
-<div class="project-header-meta">
-
-<div class="project-title-section">
-<h1>Humanitarian AI Agent Chat</h1>
-<div class="description">Un asistente impulsado por IA experto en asuntos humanitarios, diseñado para ofrecer apoyo de acceso abierto a profesionales del sector humanitario, con gestión opcional y persistente de conversaciones.</div>
-</div>
-
-<div class="meta-grid">
-<div class="meta-item">
-<span class="meta-label">Estado</span>
-<span class="status-badge production">Producción</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Inicio</span>
-<span class="meta-value">Octubre de 2024</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Última actualización</span>
-<span class="meta-value">Diciembre de 2025</span>
-</div>
-</div>
-
-<div class="meta-grid full-width">
-<div class="meta-item wide">
-<span class="meta-label">Etiquetas</span>
-<div class="tag-list">
-<a href="../tags/AI" class="tag internal tag-link">AI</a>
-</div>
-</div>
-</div>
-
-<div class="meta-grid full-width">
-<div class="meta-item wide">
-<span class="meta-label">También conocido como</span>
-<div class="alias-list">
-<div class="alias">2024-humanitarian-chat-agent</div>
-</div>
-</div>
-</div>
-
-<div class="meta-links-section">
-<a href="https://baena.ai/projects/ai-chatbot-project" class="meta-link briefing" target="_blank" rel="noopener noreferrer">📋 Resumen del proyecto</a>
-<a href="https://chat.baena.ai" class="meta-link demo" target="_blank" rel="noopener noreferrer">🔗 Demo en vivo</a>
-<a href="https://baena.ai/articles/chat-agent" class="meta-link article" target="_blank" rel="noopener noreferrer">📄 Leer artículo</a>
-<a href="https://github.com/Jesus-Baena/2024-humanitarian-chat-agent" class="meta-link github" target="_blank" rel="noopener noreferrer">⚙️ Ver en GitHub</a>
-</div>
-
-</div>
-
----
-
 ## **1. Título del proyecto:**
 El Chatbot Humanitario de IA
 

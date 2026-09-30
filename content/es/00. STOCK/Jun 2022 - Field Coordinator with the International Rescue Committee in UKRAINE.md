@@ -1,8 +1,12 @@
 ---
 title: Jun 2022 - Coordinador de Terreno con el International Rescue Committee en UCRANIA
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2022-06-01
+period: "Jun 2022"
+emergency: "Conflicto en Ucrania"
+icon: "🤝"
+role: "Coordinador de Campo"
+org: "International Rescue Committee"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

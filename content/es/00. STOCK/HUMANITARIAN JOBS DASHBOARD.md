@@ -1,8 +1,8 @@
 ---
 title: "Humanitarian Jobs Dashboard"
+type: project
 subtitle: "Inteligencia en tiempo real sobre el empleo en el sector"
 description: "Un panel de inteligencia de negocio en tiempo real que procesa cientos de miles de puntos de datos al día para ofrecer información sobre el empleo humanitario, rastreando el impacto de las crisis de financiación en la dinámica de la fuerza laboral, las tendencias de localización y los requisitos de competencias técnicas."
-image: 
 aliases:
   - 2025-dashboard-reliefweb-jobs
 project_ID: "PRJ-2025-001"
@@ -13,7 +13,6 @@ tags:
   - DataAnalysis
   - BusinessIntelligence
 status: Producción
-briefing: 
 link: https://baena.ai/demos/reliefjobs-dashboard
 article: https://baena.ai/articles/jobs-relief
 github: https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs
@@ -29,54 +28,9 @@ stack:
   - ReliefWeb API
 draft: false
 lang: es-ES
+image: "Pasted image 20250823193323.png"
+briefing: "[[HUMANITARIAN JOBS DASHBOARD briefing]]"
 ---
-
-<div class="project-header-meta">
-
-<div class="project-title-section">
-<h1>Humanitarian Jobs Dashboard</h1>
-<div class="subtitle">Inteligencia en tiempo real sobre el empleo en el sector</div>
-<div class="description">Un panel de inteligencia de negocio en tiempo real que procesa cientos de miles de puntos de datos al día para ofrecer información sobre el empleo humanitario, rastreando el impacto de las crisis de financiación en la dinámica de la fuerza laboral, las tendencias de localización y los requisitos de competencias técnicas.</div>
-</div>
-
-<div class="meta-grid">
-<div class="meta-item">
-<span class="meta-label">Estado</span>
-<span class="status-badge production">Producción</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Inicio</span>
-<span class="meta-value">Febrero de 2025</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Última actualización</span>
-<span class="meta-value">Enero de 2026</span>
-</div>
-</div>
-
-<div class="meta-grid full-width">
-<div class="meta-item wide">
-<span class="meta-label">Etiquetas</span>
-<div class="tag-list">
-<a href="../tags/AI" class="tag internal tag-link">AI</a>
-<a href="../tags/DataAnalysis" class="tag internal tag-link">DataAnalysis</a>
-<a href="../tags/BusinessIntelligence" class="tag internal tag-link">BusinessIntelligence</a>
-</div>
-</div>
-</div>
-
-<div class="meta-links-section">
-<a href="[[HUMANITARIAN JOBS DASHBOARD briefing]]" class="meta-link briefing">📋 Resumen del proyecto</a>
-<a href="https://baena.ai/demos/reliefjobs-dashboard" class="meta-link demo" target="_blank" rel="noopener noreferrer">🔗 Demo en vivo</a>
-<a href="https://baena.ai/articles/jobs-relief" class="meta-link article" target="_blank" rel="noopener noreferrer">📄 Leer artículo</a>
-<a href="https://github.com/Jesus-Baena/2025-dashboard-reliefweb-jobs" class="meta-link github" target="_blank" rel="noopener noreferrer">⚙️ Ver en GitHub</a>
-<a href="https://www.linkedin.com/posts/jbaenanet_humanitariantech-dataanalysis-reliefweb-activity-7401125392348221440-vGZt" class="meta-link social" target="_blank" rel="noopener noreferrer">📱 Publicación en LinkedIn</a>
-</div>
-
-</div>
-
----
-
 ![[00. STOCK/humanitarian_jobs_dashboard_project_brief.pdf]]
 
 
@@ -127,8 +81,6 @@ lang: es-ES
 - [[Job Postings per Month]]
 
 - [[Total Count of Posts]]
-
-- [[Map of Density of Jobs]]
 
 - [[Percentage of Positions Nationalized]]
 

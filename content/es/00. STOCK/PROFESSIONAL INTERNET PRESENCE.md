@@ -1,17 +1,11 @@
 ---
-title:
-description:
-date:
-lastUpdated:
-tags:
-status:
-briefing:
-link:
-article:
-github:
-post:
 draft: true
 lang: es-ES
+type: project
+status: Planificación
+description: "Este proyecto traza la estrategia deliberada y la implementación técnica de mi identidad digital personal. Abarca la creación de este jardín digital, mi blog personal y otros activos en línea, para servir como un centro unificado de mi trabajo, proyectos e ideas."
+title: "Professional Internet Presence"
+note: "Documentación de estrategia e implementación en desarrollo"
 ---
 ## **1. Título del proyecto:**  
 

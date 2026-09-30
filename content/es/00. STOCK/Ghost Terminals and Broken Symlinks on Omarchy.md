@@ -1,10 +1,12 @@
 ---
 title: Terminales fantasma y enlaces simbólicos rotos en Omarchy
+type: post
+date: 2026-01-18
 draft: false
 tags:
   - tech
   - tutorial
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+  - stack
 created: 2026-01-18
 modified: 2026-02-06
 lang: es-ES

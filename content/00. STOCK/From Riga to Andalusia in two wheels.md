@@ -1,8 +1,9 @@
 ---
 title: From Riga to Andalusia in two wheels
-draft:
+type: post
+date: 2025-10-03
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - motorbike
 created: 2025-10-03
 modified: 2025-11-30
 ---

@@ -1,8 +1,12 @@
 ---
 title: Abr 2012 - Delegado Internacional (WASH) con la Cruz Roja Española en YIBUTI
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2012-04-01
+period: "Abr 2012"
+emergency: "Hambruna en el Cuerno de África"
+icon: "🗺️"
+role: "Delegado Internacional (WASH)"
+org: "Cruz Roja Española"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

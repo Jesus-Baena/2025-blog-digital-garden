@@ -1,8 +1,9 @@
 ---
 title: De Riga a Andalucía sobre dos ruedas
-draft:
+type: post
+date: 2025-10-03
 tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+  - motorbike
 created: 2025-10-03
 modified: 2025-11-30
 lang: es-ES

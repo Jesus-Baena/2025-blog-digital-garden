@@ -1,8 +1,10 @@
 ---
 title: Viajando de Riga a Varsovia en moto
-draft:
+type: post
+date: 2025-10-26
 tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+  - motorbike
+  - geography
 created: 2025-11-30
 modified: 2025-11-30
 lang: es-ES

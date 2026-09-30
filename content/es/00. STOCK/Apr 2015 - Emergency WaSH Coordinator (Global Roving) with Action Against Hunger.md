@@ -1,8 +1,12 @@
 ---
 title: Abr 2015 - Coordinador de Emergencias WaSH (Itinerante Global) con Action Against Hunger
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2015-04-01
+period: "Abr 2015"
+emergency: "Múltiples emergencias en todo el mundo"
+icon: "🌍"
+role: "Coordinador de Emergencias WaSH (Itinerante Global)"
+org: "Acción contra el Hambre"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

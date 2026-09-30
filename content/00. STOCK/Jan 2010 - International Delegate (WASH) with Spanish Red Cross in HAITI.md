@@ -1,8 +1,12 @@
 ---
 title: Jan 2010 - International Delegate (WASH) with Spanish Red Cross in HAITI
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2010-01-01
+period: "Jan 2010"
+emergency: "Earthquake Emergency"
+icon: "✨"
+role: "International Delegate (WASH)"
+org: "Spanish Red Cross"
 created: 2026-02-01
 modified: 2026-02-01
 ---

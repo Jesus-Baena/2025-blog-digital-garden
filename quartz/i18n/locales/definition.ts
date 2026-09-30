@@ -65,6 +65,21 @@ export interface Translation {
       github: string
       post: string
     }
+    projectMeta?: {
+      status: string
+      started: string
+      lastUpdated: string
+      timeline: string
+      tags: string
+      stack: string
+      note: string
+      with: string
+      briefing: string
+      demo: string
+      article: string
+      github: string
+      post: string
+    }
     recentNotes: {
       title: string
       seeRemainingMore: (variables: { remaining: number }) => string

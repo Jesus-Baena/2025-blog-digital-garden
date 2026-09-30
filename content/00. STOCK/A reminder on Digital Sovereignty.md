@@ -1,9 +1,11 @@
 ---
 title: A reminder on Digital Sovereignty
+type: post
+date: 2025-08-07
 draft: false
 tags:
   - tech
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - stack
 created: 2025-08-11
 modified: 2025-08-12
 ---

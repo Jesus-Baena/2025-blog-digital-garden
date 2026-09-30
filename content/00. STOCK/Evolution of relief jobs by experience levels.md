@@ -1,8 +1,5 @@
 ---
 title: Evolution of relief jobs by experience levels
-draft:
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
 created: 2025-08-14
 modified: 2026-02-01
 ---

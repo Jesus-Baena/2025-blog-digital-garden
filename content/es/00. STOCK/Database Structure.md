@@ -1,8 +1,5 @@
 ---
 title: Estructura de la base de datos
-draft:
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES
@@ -29,7 +26,6 @@ Esta tabla contiene la información principal y única de cada oferta de empleo.
 *   `date_closing` (Timestamp)
 
 ---
-
 ### Tablas de búsqueda / dimensiones
 
 Estas tablas almacenan información de categorías que pueden compartirse entre varios empleos. Usar estas tablas evita la duplicación de datos.

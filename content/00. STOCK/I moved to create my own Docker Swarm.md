@@ -1,8 +1,10 @@
 ---
 title: I moved to create my own Docker Swarm
-draft: false
+type: post
+date: 2025-10-03
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - stack
+draft: false
 created: 2026-02-03
 modified: 2026-02-15
 ---

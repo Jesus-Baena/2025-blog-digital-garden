@@ -3,7 +3,6 @@ title: Nvidia GPU GeForce 4090
 draft: false
 tags:
   - stack
-date:
 created: 2026-02-03
 modified: 2026-02-03
 lang: es-ES

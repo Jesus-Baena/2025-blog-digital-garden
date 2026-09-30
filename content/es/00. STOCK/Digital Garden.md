@@ -1,8 +1,5 @@
 ---
 title: Jardín digital
-draft:
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-17
 modified: 2025-08-17
 lang: es-ES

@@ -1,8 +1,5 @@
 ---
 title: Head of Base (P3) with IOM in EBOLA IDP CRISIS
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
 created: 2026-02-01
 modified: 2026-02-01
 ---

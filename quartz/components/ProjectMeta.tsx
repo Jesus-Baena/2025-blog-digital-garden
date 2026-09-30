@@ -1,289 +1,135 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { i18n, getEffectiveLocale } from "../i18n"
+import { FullSlug, resolveRelative } from "../util/path"
+import { getEffectiveLocale } from "../i18n"
+import { getDate } from "./Date"
+import {
+  projectLinks,
+  projectStrings,
+  stackItems,
+  statusClass,
+  toMonthYear,
+} from "./projectMeta.util"
 
-const ProjectMeta: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
-  const locale = getEffectiveLocale(cfg.locale, fileData.frontmatter?.lang)
-  const t = i18n(locale).components.propertyMeta
-  const frontmatter = fileData.frontmatter
-  const description = frontmatter?.description as string | undefined
-  const status = frontmatter?.status as string | undefined
-  const link = frontmatter?.link as string | undefined
-  const article = frontmatter?.article as string | undefined
-  const github = frontmatter?.github as string | undefined
-  const post = frontmatter?.post as string | undefined
-  const lastUpdated = frontmatter?.lastUpdated as string | undefined
-  const tags = frontmatter?.tags
+/**
+ * Project header rendered from frontmatter only. Shown on any note with
+ * `type: project` (or, for backwards compatibility, a `status` field).
+ */
+const ProjectMeta: QuartzComponent = ({
+  cfg,
+  fileData,
+  allFiles,
+  displayClass,
+}: QuartzComponentProps) => {
+  const fm: Record<string, any> = fileData.frontmatter ?? {}
+  if (fm.type !== "project" && !fm.status) return null
 
-  // Only show if at least one project property exists
-  if (
-    !description &&
-    !status &&
-    !link &&
-    !article &&
-    !github &&
-    !post &&
-    !lastUpdated &&
-    (!tags || tags.length === 0)
-  ) {
-    return null
-  }
+  const locale = getEffectiveLocale(cfg.locale, fm.lang)
+  const t = projectStrings(locale)
+  const started = toMonthYear(getDate(cfg, fileData), locale)
+  const updated = toMonthYear(fm.lastUpdated, locale)
+  const tags: string[] = fm.tags ?? []
+  const stack = stackItems(fm.stack)
+  const links = projectLinks(fm, fileData, allFiles, t)
 
   return (
-    <div class={classNames(displayClass, "project-meta")}>
-      <div class="project-meta-header">{t.header}</div>
-      <div class="project-meta-table">
-        <div class="project-meta-row">
-          <div class="project-meta-label">
-            <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-              <path d="M2.5 3.5h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1zm0 3h11v1h-11v-1z"></path>
-            </svg>
-            <span>{t.description}</span>
-          </div>
-          <div class="project-meta-value">{description || t.empty}</div>
+    <div class={classNames(displayClass, "project-header-meta")}>
+      {(fm.subtitle || fm.description) && (
+        <div class="project-title-section">
+          {fm.subtitle && <div class="subtitle">{fm.subtitle as string}</div>}
+          {fm.description && <div class="description">{fm.description as string}</div>}
         </div>
+      )}
 
-        {lastUpdated && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10zm.5-8v3.793l2.646 2.647-.707.707L7.5 9.207V5h1z"></path>
-              </svg>
-              <span>{t.lastUpdated}</span>
-            </div>
-            <div class="project-meta-value project-date">📅 {lastUpdated}</div>
+      <div class="meta-grid">
+        {fm.status && (
+          <div class="meta-item">
+            <span class="meta-label">{t.status}</span>
+            <span class={classNames(undefined, "status-badge", statusClass(fm.status as string))}>
+              {fm.status as string}
+            </span>
           </div>
         )}
-
-        {tags && tags.length > 0 && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M2 4.5l6-2.5 6 2.5v7l-6 2.5-6-2.5v-7zm1 .72v5.56l5 2.08v-5.56l-5-2.08zm6 7.64l5-2.08V5.22l-5 2.08v5.56z"></path>
-              </svg>
-              <span>{t.tags}</span>
-            </div>
-            <div class="project-meta-value project-tags">
-              {tags.map((tag: string) => (
-                <span class="project-tag">{tag}</span>
-              ))}
-            </div>
+        {started && (
+          <div class="meta-item">
+            <span class="meta-label">{t.started}</span>
+            <span class="meta-value">{started}</span>
           </div>
         )}
-
-        {status && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM8 13a5 5 0 110-10 5 5 0 010 10z"></path>
-              </svg>
-              <span>{t.status}</span>
-            </div>
-            <div class="project-meta-value">{status}</div>
-          </div>
-        )}
-
-        {link && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
-              </svg>
-              <span>{t.link}</span>
-            </div>
-            <div class="project-meta-value">
-              <a href={link} class="project-link-url" target="_blank" rel="noopener noreferrer">
-                {link} ↗
-              </a>
-            </div>
-          </div>
-        )}
-
-        {article && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
-              </svg>
-              <span>{t.article}</span>
-            </div>
-            <div class="project-meta-value">
-              <a href={article} class="project-link-url" target="_blank" rel="noopener noreferrer">
-                {article} ↗
-              </a>
-            </div>
-          </div>
-        )}
-
-        {github && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
-              </svg>
-              <span>{t.github}</span>
-            </div>
-            <div class="project-meta-value">
-              <a href={github} class="project-link-url" target="_blank" rel="noopener noreferrer">
-                {github} ↗
-              </a>
-            </div>
-          </div>
-        )}
-
-        {post && (
-          <div class="project-meta-row">
-            <div class="project-meta-label">
-              <svg class="property-icon" viewBox="0 0 16 16" width="16" height="16">
-                <path d="M7.5 10.5l-3 3a2.12 2.12 0 11-3-3l3-3a2.12 2.12 0 013 0M8.5 5.5l3-3a2.12 2.12 0 113 3l-3 3a2.12 2.12 0 01-3 0"></path>
-              </svg>
-              <span>{t.post}</span>
-            </div>
-            <div class="project-meta-value">
-              {(() => {
-                const markdownLinkRegex = /^\[([^\]]+)\]\(([^)]+)\)$/
-                const match = post.match(markdownLinkRegex)
-                if (match) {
-                  const [_, text, url] = match
-                  return (
-                    <a
-                      href={url}
-                      class="project-link-url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {text} ↗
-                    </a>
-                  )
-                } else if (post.startsWith("http")) {
-                  return (
-                    <a
-                      href={post}
-                      class="project-link-url"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {post} ↗
-                    </a>
-                  )
-                } else {
-                  return post
-                }
-              })()}
-            </div>
+        {updated && (
+          <div class="meta-item">
+            <span class="meta-label">{t.lastUpdated}</span>
+            <span class="meta-value">{updated}</span>
           </div>
         )}
       </div>
+
+      {tags.length > 0 && (
+        <div class="meta-grid full-width">
+          <div class="meta-item wide">
+            <span class="meta-label">{t.tags}</span>
+            <div class="tag-list">
+              {tags.map((tag) => (
+                <a
+                  href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                  class="tag internal tag-link"
+                >
+                  {tag}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {stack.length > 0 && (
+        <div class="meta-grid full-width">
+          <div class="meta-item wide">
+            <span class="meta-label">{t.stack}</span>
+            <div class="stack-list">
+              {stack.map((s) => (
+                <span class="stack-item">{s}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {fm.note && (
+        <div class="meta-grid full-width">
+          <div class="meta-item wide">
+            <span class="meta-label">{t.note}</span>
+            <span class="meta-value">{fm.note as string}</span>
+          </div>
+        </div>
+      )}
+
+      {links.length > 0 && (
+        <div class="meta-links-section">
+          {links.map((l) => (
+            <a href={l.href} class={classNames(undefined, "meta-link", l.kind)} {...l.attrs}>
+              {l.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
 
 ProjectMeta.css = `
-.project-meta {
-  margin: 1.5rem 0 2rem 0;
-  border: 1px solid var(--lightgray);
-  border-radius: 8px;
-  background-color: var(--highlight);
-  overflow: hidden;
-}
-
-.project-meta-header {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--gray);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  background-color: var(--light);
-  border-bottom: 1px solid var(--lightgray);
-}
-
-.project-meta-table {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-meta-row {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 0.75rem;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--lightgray);
-  font-size: 0.9rem;
-  align-items: start;
-}
-
-.project-meta-row:last-child {
-  border-bottom: none;
-}
-
-.project-meta-label {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: var(--gray);
-  font-size: 0.85rem;
-}
-
-.property-icon {
-  flex-shrink: 0;
-  opacity: 0.6;
-  fill: currentColor;
-}
-
-.project-meta-value {
-  color: var(--dark);
-  word-break: break-word;
-  line-height: 1.5;
-}
-
-.project-empty {
-  color: var(--gray);
-  opacity: 0.5;
-  font-style: italic;
-}
-
-.project-date {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.project-tags {
+.project-header-meta .stack-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
-
-.project-tag {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  background-color: var(--secondary);
-  color: var(--light);
-  border-radius: 4px;
+.project-header-meta .stack-item {
+  font-family: var(--codeFont);
   font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.project-link-url {
-  color: var(--secondary);
-  text-decoration: none;
-  word-break: break-all;
-}
-
-.project-link-url:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .project-meta-row {
-    grid-template-columns: 1fr;
-    gap: 0.3rem;
-  }
-  
-  .project-meta-label {
-    font-weight: 600;
-  }
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  color: var(--darkgray);
 }
 `
 

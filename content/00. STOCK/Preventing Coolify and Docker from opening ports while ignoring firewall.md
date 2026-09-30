@@ -1,8 +1,10 @@
 ---
 title: Preventing Coolify and Docker from opening ports while ignoring firewall
-draft:
+type: post
+date: 2025-07-10
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+  - stack
+  - tutorial
 created: 2025-08-18
 modified: 2026-02-03
 ---

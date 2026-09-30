@@ -1,8 +1,12 @@
 ---
 title: Jan 2010 - Emergency Medical Technician Instructor with Spanish Red Cross
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2010-01-01
+period: "Jan 2010"
+emergency: "EMT Capacity Building"
+icon: "🚑"
+role: "Emergency Medical Technician Instructor"
+org: "Spanish Red Cross"
 created: 2026-02-01
 modified: 2026-02-01
 ---

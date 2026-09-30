@@ -1,8 +1,6 @@
 ---
 title: Idiomas más demandados
 draft: false
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2026-02-15
 modified: 2026-03-02
 lang: es-ES

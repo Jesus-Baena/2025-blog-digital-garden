@@ -1,8 +1,10 @@
 ---
 title: El error de excluir a los centros de salud locales de los objetivos de localización en Ucrania
+type: post
 draft: false
-tags:
 date: 2026-01-28
+tags:
+  - thoughts
 created: 2026-02-02
 modified: 2026-02-03
 lang: es-ES
@@ -45,5 +47,4 @@ En una nota más personal, resulta un tanto irónico que sea yo quien señale es
 
 
 ---
-
 [[The legal context of Communal Non-Profit Enterprises (CNPEs)]]

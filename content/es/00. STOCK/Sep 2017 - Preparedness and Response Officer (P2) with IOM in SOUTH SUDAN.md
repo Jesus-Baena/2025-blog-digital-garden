@@ -1,8 +1,12 @@
 ---
 title: Sep 2017 - Preparedness and Response Officer (P2) with IOM in SOUTH SUDAN
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2017-09-01
+period: "Sep 2017"
+emergency: "Conflicto en Sudán del Sur"
+icon: "💧"
+role: "Oficial de Preparación y Respuesta (P2)"
+org: "Organización Internacional para las Migraciones"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

@@ -1,10 +1,8 @@
 ---
 title: Extracción con LLM de nueva información sobre localización en descripciones de empleo
-draft:
 tags:
   - AI
   - DataAnalysis
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-11-30
 modified: 2026-02-01
 lang: es-ES

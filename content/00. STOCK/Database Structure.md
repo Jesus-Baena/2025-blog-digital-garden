@@ -1,8 +1,5 @@
 ---
 title: Database Structure
-draft:
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
 created: 2026-02-01
 modified: 2026-02-01
 ---
@@ -28,7 +25,6 @@ This table holds the main, unique information for each job posting.
 *   `date_closing` (Timestamp)
 
 ---
-
 ### Lookup / Dimension Tables
 
 These tables store information for categories that can be shared across multiple jobs. Using these tables prevents data duplication.

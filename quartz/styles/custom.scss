@@ -9,11 +9,6 @@ a.internal {
   border-radius: 0 !important;
 }
 
-// Hide the default Quartz ProjectMeta component (we use custom .project-header-meta instead)
-.project-meta {
-  display: none !important;
-}
-
 // Dark mode custom colors
 [saved-theme="dark"] {
   // Bold text - standard white

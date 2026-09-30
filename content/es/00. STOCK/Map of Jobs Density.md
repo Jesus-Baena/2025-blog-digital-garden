@@ -1,11 +1,10 @@
 ---
 title: Mapa de densidad de empleos
-draft:
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-08-28
 modified: 2026-02-01
 lang: es-ES
+aliases:
+  - "Map of Density of Jobs"
 ---
 ![[Pasted image 20250824164018.png]]
 

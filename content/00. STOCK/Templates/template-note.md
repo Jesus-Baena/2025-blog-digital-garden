@@ -1,8 +1,8 @@
 ---
-title: 
-draft: 
+title:
+type: post
+date: <% tp.date.now("YYYY-MM-DD") %>
 tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
-created: 2025-08-11
-modified: 2026-02-13
+  -
+draft: true
 ---

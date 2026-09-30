@@ -1,10 +1,8 @@
 ---
 title: LLM extraction of new information in Job Descriptions about localization
-draft:
 tags:
   - AI
   - DataAnalysis
-date: # YYYY-MM-DD — overrides displayed date on the site
 created: 2025-11-30
 modified: 2026-02-01
 ---

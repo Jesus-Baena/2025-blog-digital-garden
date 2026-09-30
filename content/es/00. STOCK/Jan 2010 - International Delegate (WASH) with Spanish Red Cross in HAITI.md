@@ -1,8 +1,12 @@
 ---
 title: Ene. 2010 - Delegado Internacional (WASH) con Cruz Roja Española en HAITÍ
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2010-01-01
+period: "Ene 2010"
+emergency: "Emergencia por terremoto"
+icon: "✨"
+role: "Delegado Internacional (WASH)"
+org: "Cruz Roja Española"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

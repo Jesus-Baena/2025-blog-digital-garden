@@ -1,8 +1,12 @@
 ---
 title: Apr 2015 - Emergency WaSH Coordinator (Global Roving) with Action Against Hunger
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2015-04-01
+period: "Apr 2015"
+emergency: "Multiple Emergencies around the World"
+icon: "🌍"
+role: "Emergency WaSH Coordinator (Global Roving)"
+org: "Action Against Hunger"
 created: 2026-02-01
 modified: 2026-02-01
 ---

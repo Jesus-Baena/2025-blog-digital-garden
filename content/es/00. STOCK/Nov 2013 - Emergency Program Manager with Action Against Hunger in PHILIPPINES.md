@@ -1,8 +1,12 @@
 ---
 title: Nov 2013 - Jefe de Programa de Emergencia con Action Against Hunger en FILIPINAS
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2013-11-01
+period: "Nov 2013"
+emergency: "Tifón Haiyan"
+icon: "🌀"
+role: "Gerente de Programa de Emergencias"
+org: "Acción contra el Hambre"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

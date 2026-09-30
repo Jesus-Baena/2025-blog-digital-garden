@@ -1,8 +1,12 @@
 ---
 title: Nov 2012 - Delegado Internacional (WASH) con la Cruz Roja Austriaca y Alemana en HAITÍ
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2012-11-01
+period: "Nov 2012"
+emergency: "Emergencias de recuperación tras el terremoto y los huracanes"
+icon: "🇭🇹"
+role: "Delegado Internacional (WASH)"
+org: "Cruz Roja Austriaca / Cruz Roja Alemana"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

@@ -1,8 +1,10 @@
 ---
 title: Infraestructura de la oficina en casa
-draft:
+type: post
+date: 2025-08-02
 tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+  - stack
+  - review
 created: 2025-08-11
 modified: 2025-08-17
 lang: es-ES

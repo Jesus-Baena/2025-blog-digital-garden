@@ -1,6 +1,5 @@
 ---
 title: Welcome to my Blog
-date: # YYYY-MM-DD — overrides displayed date on the site
 created: 2021-07-18
 modified: 2026-02-09
 ---
@@ -15,5 +14,4 @@ A general collection of my self-contained thoughts, spanning a wide variety of t
 This spaces serves as a dynamic repository for my work and digital presence. Here, you'll find a collection of my technical notes and tutorials, offering potential solutions to challenges you might be facing. It also provides a look into the inner workings and development processes of my current projects, with the finished pieces accessible [at baena.ai](https://baena.ai)
 
 ---
-
 This space is a natural extension of my daily work within [[Obsidian]]. Since I already use it constantly, this site is just a curated window into my private knowledge vault. The unique *clunkiness*, block-based feel of this space is a direct result of the Obsidian interface it's built upon. 

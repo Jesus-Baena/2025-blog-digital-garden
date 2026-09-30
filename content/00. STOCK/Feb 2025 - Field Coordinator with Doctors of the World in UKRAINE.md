@@ -1,8 +1,12 @@
 ---
 title: Feb 2025 - Field Coordinator with Doctors of the World in UKRAINE
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2025-02-01
+period: "Feb 2025"
+emergency: "Conflict in Ukraine"
+icon: "⚕️"
+role: "Field Coordinator"
+org: "Doctors of the World"
 created: 2026-02-01
 modified: 2026-02-01
 ---

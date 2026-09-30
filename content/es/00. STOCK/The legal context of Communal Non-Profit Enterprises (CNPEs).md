@@ -1,7 +1,6 @@
 ---
 title: El contexto legal de las Empresas Comunales Sin Ánimo de Lucro (CNPE)
 draft: false
-tags:
 date: 2026-01-28
 created: 2026-02-03
 modified: 2026-02-03

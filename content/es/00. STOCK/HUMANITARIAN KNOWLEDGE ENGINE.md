@@ -1,17 +1,11 @@
 ---
-title:
-description:
-date:
-lastUpdated:
-tags:
-status:
-briefing:
-link:
-article:
-github:
-post:
 draft: true
 lang: es-ES
+type: project
+status: Planificación
+description: "El Humanitarian Knowledge Engine es un proyecto conceptual orientado a construir una plataforma centralizada e impulsada por IA para indexar, buscar y sintetizar grandes cantidades de datos, informes y lecciones aprendidas del sector humanitario, haciendo que la información crítica sea fácilmente accesible para los profesionales de campo."
+title: "Humanitarian Knowledge Engine"
+note: "Fase conceptual - documentación detallada pendiente"
 ---
 ## **1. Título del proyecto:**  
 

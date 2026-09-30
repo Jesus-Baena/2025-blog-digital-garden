@@ -1,8 +1,12 @@
 ---
 title: Jun 2022 - Field Coordinator with the International Rescue Committee in UKRAINE
-draft: 
-tags:
-date: # YYYY-MM-DD — overrides displayed date on the site
+type: mission
+date: 2022-06-01
+period: "Jun 2022"
+emergency: "Conflict in Ukraine"
+icon: "🤝"
+role: "Field Coordinator"
+org: "International Rescue Committee"
 created: 2026-02-01
 modified: 2026-02-01
 ---

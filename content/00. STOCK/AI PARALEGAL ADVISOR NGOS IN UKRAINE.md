@@ -1,18 +1,16 @@
 ---
 title: AI PARALEGAL ADVISOR NGOS IN UKRAINE
-description:
+type: project
+description: "This project is designed to create an AI-powered assistant that provides NGOs in Ukraine with accessible guidance on navigating legal and administrative challenges, ensuring compliance with local regulations and donor requirements."
 aliases:
   - 2025-ukraine-law-chatbot
 date: 2025-01-13
-lastUpdated:
 tags:
   - AI
 status: Production
-briefing:
 link: https://baena.ai/demos/paralegal-advisor
 article: https://baena.ai/articles/paralegal-advisor
 github: https://github.com/Jesus-Baena/2025-ukraine-law-chatbot
-post:
 draft: false
 ---
 ## **1. Project Title:**  

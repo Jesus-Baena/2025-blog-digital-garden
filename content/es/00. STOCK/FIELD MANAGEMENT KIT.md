@@ -1,8 +1,8 @@
 ---
 title: "Proyecto COMPASS"
+type: project
 subtitle: "Un kit genérico de gestión de terreno para ONG humanitarias"
 description: "Un kit genérico para la gestión de terreno y las operaciones humanitarias, desarrollado a partir de catorce años de experiencia sobre el terreno para ayudar a las ONG a establecer y gestionar operaciones de campo de forma eficiente."
-image: 
 aliases:
   - field-management-kit
 project_ID: "PRJ-2024-003"
@@ -16,54 +16,13 @@ tags:
   - NGO
   - Humanitarian
 status: En curso
-briefing: 
-link: 
-article: 
-github: 
-post: 
 stack: 
   - [[Nuxt]]
   - [[Odoo]]
 draft: false
 lang: es-ES
+image: "Gemini_Generated_Image_rinczxrinczxrinc.png"
 ---
-
-<div class="project-header-meta">
-
-<div class="project-title-section">
-<h1>Proyecto COMPASS</h1>
-<div class="subtitle">Un kit genérico de gestión de terreno para ONG humanitarias</div>
-<div class="description">Un kit genérico para la gestión de terreno y las operaciones humanitarias, desarrollado a partir de catorce años de experiencia sobre el terreno para ayudar a las ONG a establecer y gestionar operaciones de campo de forma eficiente.</div>
-</div>
-
-<div class="meta-grid">
-<div class="meta-item">
-<span class="meta-label">Estado</span>
-<span class="status-badge development">Desarrollo</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Inicio</span>
-<span class="meta-value">Octubre 2024</span>
-</div>
-<div class="meta-item">
-<span class="meta-label">Última actualización</span>
-<span class="meta-value">Febrero 2026</span>
-</div>
-</div>
-
-<div class="meta-grid full-width">
-<div class="meta-item wide">
-<span class="meta-label">Etiquetas</span>
-<div class="tag-list">
-<a href="../tags/FieldManagement" class="tag internal tag-link">FieldManagement</a>
-</div>
-</div>
-</div>
-
-</div>
-
----
-
 ## **1. Título del proyecto:**  
 Proyecto COMPASS: Un kit genérico de gestión de terreno para ONG humanitarias
     

@@ -1,8 +1,10 @@
 ---
 title: Mar 2021 - Año sabático profesional y desarrollo profesional
-draft: 
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
+type: mission
+date: 2021-03-01
+period: "Mar 2021"
+icon: "📊"
+role: "Año sabático y desarrollo profesional"
 created: 2026-02-01
 modified: 2026-02-01
 lang: es-ES

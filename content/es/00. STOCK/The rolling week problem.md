@@ -1,8 +1,5 @@
 ---
 title: El problema de la semana móvil
-draft:
-tags:
-date: "# YYYY-MM-DD — overrides displayed date on the site"
 created: 2025-11-30
 modified: 2026-02-01
 lang: es-ES

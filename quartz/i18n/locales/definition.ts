@@ -73,6 +73,7 @@ export interface Translation {
       about: string
     }
     home?: {
+      tagline: string
       latestPosts: string
       activeProjects: string
       allPosts: string

@@ -71,6 +71,7 @@ export default {
       about: "Sobre mí",
     },
     home: {
+      tagline: "Notas de campo sobre datos humanitarios, infraestructura e IA",
       latestPosts: "Últimos artículos",
       activeProjects: "Proyectos activos",
       allPosts: "Todos los artículos →",

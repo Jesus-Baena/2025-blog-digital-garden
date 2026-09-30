@@ -71,6 +71,7 @@ export default {
       about: "About",
     },
     home: {
+      tagline: "Field notes on humanitarian data, infrastructure and AI",
       latestPosts: "Latest posts",
       activeProjects: "Active projects",
       allPosts: "All posts →",

@@ -47,6 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
+    Component.SiteTagline(),
     Component.MobileOnly(Component.Spacer()),
     sidebarTools,
     Component.NavBar(),

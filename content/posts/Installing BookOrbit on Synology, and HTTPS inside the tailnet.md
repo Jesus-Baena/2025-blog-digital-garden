@@ -6,7 +6,7 @@ tags:
   - stack
   - tutorial
 description: A self-hosted ebook library on the NAS in an afternoon. Three things got in the way, and one of them turned into a small upgrade for the whole home setup.
-draft: true
+draft: false
 ---
 For years my ebooks have lived on the NAS as a Calibre-style folder tree: author folders, one folder per book, an EPUB, an `.opf` file with the metadata and a cover. Around 7,000 books that I could only browse with a file manager. [BookOrbit](https://github.com/bookorbit/bookorbit) is a self-hosted library and reader for ebooks, PDFs, comics and audiobooks, with KOReader and Kobo sync, highlights, notes and an OPDS catalogue. It ships a two-container Docker Compose file (the app plus Postgres with pgvector), so it fits the NAS well.
 

@@ -10,7 +10,7 @@
 //
 //   node scripts/publish-from-vault.mjs            # dry run: report what would change
 //   node scripts/publish-from-vault.mjs --write    # copy files
-//   VAULT=/path/to/vault node scripts/publish-from-vault.mjs
+//   VAULT=/path/to/vault node scripts/publish-from-vault.mjs   (VAULT is required)
 //
 // The script never deletes anything in content/. A note that loses `publish: true`
 // is reported as "orphan" so you can remove it by hand.
@@ -20,14 +20,16 @@ import { join, basename, dirname, relative } from "node:path"
 import { globbySync } from "globby"
 import { parseNote, stringifyNote } from "./lib/frontmatter.mjs"
 
-const VAULT = process.env.VAULT ?? "/home/jbi/Obsidian/obsidian-vault"
+const VAULT = process.env.VAULT
 const CONTENT = "content"
 const WRITE = process.argv.includes("--write")
 const TYPE_TO_FOLDER = { post: "posts", mission: "missions", project: "projects" }
 const ATTACHMENT_EXT = /\.(png|jpe?g|gif|webp|svg|pdf)$/i
 
-if (!existsSync(VAULT)) {
-  console.error(`Vault not found: ${VAULT}`)
+if (!VAULT || !existsSync(VAULT)) {
+  console.error(
+    "Set VAULT to the path of the Obsidian vault to publish from, e.g. VAULT=~/vault npm run publish:vault",
+  )
   process.exit(2)
 }
 

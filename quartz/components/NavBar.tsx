@@ -55,27 +55,33 @@ export default (() => {
   NavBar.css = `
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
-  width: 100%;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--lightgray);
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.5rem 0 1rem 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--lightgray);
   font-family: var(--headerFont);
   font-weight: 600;
-  letter-spacing: 0.02em;
 }
 .site-nav-link {
   color: var(--darkgray);
   text-decoration: none;
-  padding: 0.2rem 0;
-  border-bottom: 2px solid transparent;
+  padding: 0.15rem 0;
 }
 .site-nav-link:hover {
   color: var(--secondary);
 }
 .site-nav-link.active {
   color: var(--secondary);
-  border-bottom-color: var(--secondary);
+}
+@media all and (max-width: 800px) {
+  .site-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    border-top: none;
+    padding-top: 0;
+  }
 }
 `
   return NavBar

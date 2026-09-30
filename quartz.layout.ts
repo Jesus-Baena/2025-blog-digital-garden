@@ -1,9 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-const isGardenPage = (page: { fileData: { frontmatter?: Record<string, any> } }) =>
-  !page.fileData.frontmatter?.type && !page.fileData.frontmatter?.list
-
 const isIndexPage = (page: { fileData: { frontmatter?: Record<string, any> } }) =>
   Boolean(page.fileData.frontmatter?.list)
 
@@ -22,7 +19,7 @@ const sidebarTools = Component.Flex({
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.NavBar()],
+  header: [],
   afterBody: [Component.SectionList()],
   footer: Component.Footer({
     links: {
@@ -52,6 +49,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     sidebarTools,
+    Component.NavBar(),
     // The file tree is only useful inside the Field Management Kit chapters.
     Component.ConditionalRender({
       component: Component.Explorer({
@@ -71,10 +69,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
   ],
   right: [
-    Component.ConditionalRender({
-      component: Component.Graph(),
-      condition: (page) => isGardenPage(page) && !isKitPage(page),
-    }),
+    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

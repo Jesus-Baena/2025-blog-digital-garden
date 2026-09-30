@@ -4,8 +4,16 @@ list: home
 created: 2021-07-18
 modified: 2026-09-30
 ---
-![[IMG_20180612_161948_231.jpg|260]]
+Welcome to my site, a space that merges my Personal Blog with my [[Digital Garden]]. Expect a dynamic collection of opinions, drafts, raw notes, and ramblings.
 
-**Hello, I'm Jesus Baena.** I have worked as a humanitarian since 2010. This site merges my personal blog with my [[Digital Garden]]: opinions, drafts, raw notes and field learnings, written as I go.
+If you're interested in my professional work, my portfolio at [at baena.ai](https://baena.ai) offers an orderly repository of projects, primarily focused on Humanitarian Work, Data Analysis, and AI. This site, in contrast, reveals the day-to-day process and thinking behind that work.
 
-The finished pieces live on my portfolio at [baena.ai](https://baena.ai), which focuses on humanitarian work, data analysis and AI. This site shows the day-to-day process and thinking behind that work.
+---
+###### **[[posts/index|Posts]]** 
+A general collection of my self-contained thoughts, spanning a wide variety of topics and categories. *This is the bloggy part of this site*. 
+###### **[[projects/index|Projects]]**,  **[[missions/index|Missions]]**, **[[stack/index|Stack]]**, **[[wiki/index|Wiki]]** and **[[about|About]]**
+This spaces serves as a dynamic repository for my work and digital presence. Here, you'll find a collection of my technical notes and tutorials, offering potential solutions to challenges you might be facing. It also provides a look into the inner workings and development processes of my current projects, with the finished pieces accessible [at baena.ai](https://baena.ai)
+
+---
+
+This space is a natural extension of my daily work within [[Obsidian]]. Since I already use it constantly, this site is just a curated window into my private knowledge vault. The unique *clunkiness*, block-based feel of this space is a direct result of the Obsidian interface it's built upon.

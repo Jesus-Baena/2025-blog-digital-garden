@@ -22,6 +22,7 @@ const sidebarTools = Component.Flex({
     { Component: Component.ReaderMode() },
     { Component: Component.LangSwitcher() },
   ],
+  gap: "0.75rem",
 })
 
 // components shared across all pages

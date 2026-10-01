@@ -503,3 +503,87 @@ a.internal {
     }
   }
 }
+
+// Tools row: keep "EN / ES" on one line and give the search box a little
+// less padding so the row fits the 320px sidebar without wrapping.
+.lang-switcher {
+  white-space: nowrap;
+}
+
+.search > .search-button > p {
+  padding: 0 0.75rem;
+}
+
+// ---------------------------------------------------------------------------
+// Mobile header
+// Below the mobile breakpoint Quartz lays the left sidebar out as one flex
+// row. That worked for title + tools alone, but with the tagline and the
+// section nav added everything was crammed side by side. Let it wrap into
+// stacked rows: brand (logo + name), tagline, tools, then the section nav.
+// ---------------------------------------------------------------------------
+@media all and ($mobile) {
+  .page > #quartz-body .sidebar.left {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.6rem 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 0.5rem;
+
+    // The spacer only made sense while the sidebar was a single row.
+    & > .spacer {
+      display: none;
+    }
+
+    // Tools row (search, theme, reader mode, language) takes the full width.
+    & > .flex-component {
+      width: 100%;
+      gap: 0.75rem !important;
+    }
+  }
+
+  // Brand: logo and site name side by side, left-aligned.
+  .page-title-container {
+    width: 100%;
+    text-align: left;
+  }
+
+  .page-title-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .page-logo {
+    width: 48px;
+    max-width: 48px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .site-tagline {
+    width: 100%;
+    margin: -0.2rem 0 0 0;
+    text-align: left;
+  }
+
+  // Let the search box use the width the tools row gives it.
+  .search {
+    max-width: none;
+  }
+
+  // Section nav: one wrapped row of links across the full width.
+  .site-nav {
+    width: 100%;
+    margin: 0;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--lightgray);
+    gap: 0.25rem 1.1rem;
+  }
+}
